@@ -197,7 +197,7 @@ export const initialServices: ServiceItem[] = [
       "Full Payroll & Compliance",
       "Rapid Backfill Support"
     ],
-    image: "/contract-staffing.jpg",
+    image: "/contract-staffing.png",
     href: "/services/contract-staffing"
   },
   {
@@ -212,7 +212,7 @@ export const initialServices: ServiceItem[] = [
       "Salary Benchmark Mapping",
       "Placement Guarantee Periods"
     ],
-    image: "/direct-hire.jpg",
+    image: "/direct-hire.png",
     href: "/services/direct-hire"
   },
   {
@@ -227,7 +227,7 @@ export const initialServices: ServiceItem[] = [
       "Compensation Consulting",
       "Onboarding Advisory"
     ],
-    image: "/executive-search.jpg",
+    image: "/executive-search.png",
     href: "/services/executive-search"
   },
   {
@@ -242,7 +242,7 @@ export const initialServices: ServiceItem[] = [
       "SLA-Driven Deliverables",
       "Scalable Hiring Capacity"
     ],
-    image: "/rpo-recruitment.jpg",
+    image: "/rpo-recruitment.png",
     href: "/services/rpo-recruitment"
   },
   {
@@ -256,7 +256,7 @@ export const initialServices: ServiceItem[] = [
       "Flexible Trial Periods",
       "Reduced Bad Hire Risk"
     ],
-    image: "/contract-to-hire.jpg",
+    image: "/contract-to-hire.png",
     href: "/services/contract-to-hire"
   },
   {
@@ -270,7 +270,7 @@ export const initialServices: ServiceItem[] = [
       "Cohesive Team Workflows",
       "Rapid Mobilization"
     ],
-    image: "/development-squads.jpg",
+    image: "/development-squads.png",
     href: "/services/dedicated-squads"
   },
   {
@@ -284,7 +284,7 @@ export const initialServices: ServiceItem[] = [
       "Soft Skill Evaluations",
       "Standardized Scoring Reports"
     ],
-    image: "/tech-vetting.jpg",
+    image: "/tech-vetting.png",
     href: "/services/tech-vetting"
   },
   {
@@ -298,7 +298,7 @@ export const initialServices: ServiceItem[] = [
       "Global Engineering Centers",
       "Dedicated Security Infrastructure"
     ],
-    image: "/offshore-staffing.jpg",
+    image: "/offshore-staffing.png",
     href: "/services/offshore-staffing"
   },
   {
@@ -312,7 +312,7 @@ export const initialServices: ServiceItem[] = [
       "Global Payroll Processing",
       "Multi-Currency Payments"
     ],
-    image: "/global-eor.jpg",
+    image: "/global-eor.png",
     href: "/services/global-eor"
   },
   {
@@ -326,7 +326,7 @@ export const initialServices: ServiceItem[] = [
       "Location Feasibility Studies",
       "Skillset Density Mapping"
     ],
-    image: "/talent-analytics.jpg",
+    image: "/talent-analytics.png",
     href: "/services/talent-mapping"
   },
   {
@@ -340,7 +340,7 @@ export const initialServices: ServiceItem[] = [
       "React, Angular & Vue Experts",
       "iOS & Android Developers"
     ],
-    image: "/software-recruitment.jpg",
+    image: "/software-recruitment.png",
     href: "/services/software-recruitment"
   },
   {
@@ -354,7 +354,7 @@ export const initialServices: ServiceItem[] = [
       "Terraform & IaC Professionals",
       "Site Reliability Engineers (SRE)"
     ],
-    image: "/devops-recruiting.jpg",
+    image: "/devops-recruiting.png",
     href: "/services/devops-recruiting"
   }
 ];
@@ -691,11 +691,11 @@ export const getWebsiteContent = (): WebsiteContent => {
     const parsed = JSON.parse(raw);
     let dirty = false;
 
-    // Migrate old .svg images to new .jpg images
+    // Migrate old .svg or .jpg images to new .png images
     if (parsed.services) {
       parsed.services = parsed.services.map((s: any) => {
-        if (s.image && s.image.endsWith('.svg')) {
-          s.image = s.image.replace('.svg', '.jpg');
+        if (s.image && (s.image.endsWith('.svg') || s.image.endsWith('.jpg'))) {
+          s.image = s.image.replace(/\.(svg|jpg)$/, '.png');
           dirty = true;
         }
         return s;
@@ -703,8 +703,8 @@ export const getWebsiteContent = (): WebsiteContent => {
     }
     if (parsed.products) {
       parsed.products = parsed.products.map((p: any) => {
-        if (p.image && p.image.endsWith('.svg')) {
-          p.image = p.image.replace('.svg', '.jpg');
+        if (p.image && (p.image.endsWith('.svg') || p.image.endsWith('.jpg'))) {
+          p.image = p.image.replace(/\.(svg|jpg)$/, '.png');
           dirty = true;
         }
         return p;

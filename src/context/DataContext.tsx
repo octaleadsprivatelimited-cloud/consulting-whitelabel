@@ -37,7 +37,7 @@ export const defaultFallbackContent: WebsiteContent = {
         "Fully managed HR compliance"
       ],
       color: "bg-accent",
-      image: "/contract-staffing.jpg",
+      image: "/contract-staffing.png",
       link: "/products/contract-staffing"
     },
     {
@@ -53,7 +53,7 @@ export const defaultFallbackContent: WebsiteContent = {
         "Risk-free hiring guarantee"
       ],
       color: "bg-sprinklr-purple",
-      image: "/direct-hire.jpg",
+      image: "/direct-hire.png",
       link: "/products/direct-hire"
     },
     {
@@ -69,7 +69,7 @@ export const defaultFallbackContent: WebsiteContent = {
         "Established development practices"
       ],
       color: "bg-sprinklr-green",
-      image: "/development-squads.jpg",
+      image: "/development-squads.png",
       link: "/products/executive-search"
     }
   ],

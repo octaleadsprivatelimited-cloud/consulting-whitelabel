@@ -13,7 +13,7 @@
         "Full Payroll & Compliance",
         "Rapid Backfill Support"
       ],
-      "image": "/contract-staffing.jpg",
+      "image": "/contract-staffing.png",
       "href": "/services/contract-staffing"
     },
     {
@@ -28,7 +28,7 @@
         "Salary Benchmark Mapping",
         "Placement Guarantee Periods"
       ],
-      "image": "/direct-hire.jpg",
+      "image": "/direct-hire.png",
       "href": "/services/direct-hire"
     },
     {
@@ -43,7 +43,7 @@
         "Compensation Consulting",
         "Onboarding Advisory"
       ],
-      "image": "/executive-search.jpg",
+      "image": "/executive-search.png",
       "href": "/services/executive-search"
     },
     {
@@ -58,7 +58,7 @@
         "SLA-Driven Deliverables",
         "Scalable Hiring Capacity"
       ],
-      "image": "/rpo-recruitment.jpg",
+      "image": "/rpo-recruitment.png",
       "href": "/services/recruitment-process-outsourcing"
     },
     {
@@ -72,7 +72,7 @@
         "Flexible Trial Periods",
         "Reduced Bad Hire Risk"
       ],
-      "image": "/contract-to-hire.jpg",
+      "image": "/contract-to-hire.png",
       "href": "/services/contract-to-hire"
     },
     {
@@ -86,7 +86,7 @@
         "Cohesive Team Workflows",
         "Rapid Mobilization"
       ],
-      "image": "/development-squads.jpg",
+      "image": "/development-squads.png",
       "href": "/services/dedicated-squads"
     },
     {
@@ -100,7 +100,7 @@
         "Soft Skill Evaluations",
         "Standardized Scoring Reports"
       ],
-      "image": "/tech-vetting.jpg",
+      "image": "/tech-vetting.png",
       "href": "/services/tech-vetting"
     },
     {
@@ -114,7 +114,7 @@
         "Global Engineering Centers",
         "Dedicated Security Infrastructure"
       ],
-      "image": "/offshore-staffing.jpg",
+      "image": "/offshore-staffing.png",
       "href": "/services/offshore-staffing"
     },
     {
@@ -128,7 +128,7 @@
         "Global Payroll Processing",
         "Multi-Currency Payments"
       ],
-      "image": "/global-eor.jpg",
+      "image": "/global-eor.png",
       "href": "/services/global-eor"
     },
     {
@@ -142,7 +142,7 @@
         "Location Feasibility Studies",
         "Skillset Density Mapping"
       ],
-      "image": "/talent-analytics.jpg",
+      "image": "/talent-analytics.png",
       "href": "/services/talent-mapping"
     },
     {
@@ -156,7 +156,7 @@
         "React, Angular & Vue Experts",
         "iOS & Android Developers"
       ],
-      "image": "/software-recruitment.jpg",
+      "image": "/software-recruitment.png",
       "href": "/services/software-recruitment"
     },
     {
@@ -170,7 +170,7 @@
         "Terraform & IaC Professionals",
         "Site Reliability Engineers (SRE)"
       ],
-      "image": "/devops-recruiting.jpg",
+      "image": "/devops-recruiting.png",
       "href": "/services/devops-recruiting"
     }
   ],
@@ -321,7 +321,7 @@
         "Fully managed HR compliance"
       ],
       "color": "bg-accent",
-      "image": "/contract-staffing.jpg",
+      "image": "/contract-staffing.png",
       "link": "/products/contract-staffing"
     },
     {
@@ -337,7 +337,7 @@
         "Risk-free hiring guarantee"
       ],
       "color": "bg-sprinklr-purple",
-      "image": "/direct-hire.jpg",
+      "image": "/direct-hire.png",
       "link": "/products/direct-hire"
     },
     {
@@ -353,7 +353,7 @@
         "Established development practices"
       ],
       "color": "bg-sprinklr-green",
-      "image": "/development-squads.jpg",
+      "image": "/development-squads.png",
       "link": "/products/executive-search"
     }
   ],
