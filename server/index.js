@@ -13,6 +13,12 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Request logging middleware
+app.use((req, res, next) => {
+  console.log(`[SERVER] Received request: ${req.method} ${req.url}`);
+  next();
+});
+
 // Cybersecurity middleware: Set security headers
 app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" }
