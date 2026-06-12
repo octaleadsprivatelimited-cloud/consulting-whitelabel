@@ -1,0 +1,746 @@
+{
+  "services": [
+    {
+      "id": "ser-1",
+      "iconName": "Briefcase",
+      "title": "Contract IT Staffing",
+      "description": "Flexible, short-term, or project-based technical staffing solutions to meet immediate project demands and scale teams quickly.",
+      "features": [
+        "On-Demand Tech Scaling",
+        "Project-Specific Experts",
+        "Immediate Onboarding",
+        "Flexible Contract Terms",
+        "Full Payroll & Compliance",
+        "Rapid Backfill Support"
+      ],
+      "image": "/contract-staffing.svg",
+      "href": "/services/contract-staffing"
+    },
+    {
+      "id": "ser-2",
+      "iconName": "Users",
+      "title": "Direct Hire Placement",
+      "description": "Permanent recruitment services to find, vet, and place top-tier, full-time IT professionals in key organizational roles.",
+      "features": [
+        "Targeted Executive Search",
+        "Deep Technical Vetting",
+        "Cultural Alignment Checks",
+        "Salary Benchmark Mapping",
+        "Placement Guarantee Periods"
+      ],
+      "image": "/direct-hire.svg",
+      "href": "/services/direct-hire"
+    },
+    {
+      "id": "ser-3",
+      "iconName": "Search",
+      "title": "Executive Tech Search",
+      "description": "Retained headhunting services targeting elite technology leaders, including CTOs, VPs of Engineering, and IT Directors.",
+      "features": [
+        "Confidential Sourcing",
+        "Leadership Assessment",
+        "Comprehensive Vetting",
+        "Compensation Consulting",
+        "Onboarding Advisory"
+      ],
+      "image": "/executive-search.svg",
+      "href": "/services/executive-search"
+    },
+    {
+      "id": "ser-4",
+      "iconName": "Award",
+      "title": "Recruitment Process Outsourcing",
+      "description": "End-to-end management of your company's tech recruiting pipeline, from sourcing and interviewing to onboarding.",
+      "features": [
+        "Dedicated Recruiting Teams",
+        "ATS Optimization",
+        "Employer Branding Support",
+        "SLA-Driven Deliverables",
+        "Scalable Hiring Capacity"
+      ],
+      "image": "/rpo-recruitment.svg",
+      "href": "/services/recruitment-process-outsourcing"
+    },
+    {
+      "id": "ser-5",
+      "iconName": "UserCheck",
+      "title": "Contract-to-Hire Solutions",
+      "description": "Evaluate a candidate's technical skills and cultural fit on the job before committing to a permanent employment offer.",
+      "features": [
+        "Risk-Free Evaluation Period",
+        "Seamless Transition Path",
+        "Flexible Trial Periods",
+        "Reduced Bad Hire Risk"
+      ],
+      "image": "/contract-to-hire.svg",
+      "href": "/services/contract-to-hire"
+    },
+    {
+      "id": "ser-6",
+      "iconName": "Layers",
+      "title": "Dedicated Development Squads",
+      "description": "Assembling fully-managed, cross-functional squads of engineers, designers, and managers tailored to your software projects.",
+      "features": [
+        "Agile Team Composition",
+        "Product Managers & QAs Included",
+        "Cohesive Team Workflows",
+        "Rapid Mobilization"
+      ],
+      "image": "/development-squads.svg",
+      "href": "/services/dedicated-squads"
+    },
+    {
+      "id": "ser-7",
+      "iconName": "Code",
+      "title": "Tech Vetting & Assessment",
+      "description": "Specialized coding challenges, architectural design reviews, and engineering interviews led by senior domain experts.",
+      "features": [
+        "Developer-Led Screenings",
+        "Custom Coding Tasks",
+        "Soft Skill Evaluations",
+        "Standardized Scoring Reports"
+      ],
+      "image": "/tech-vetting.svg",
+      "href": "/services/tech-vetting"
+    },
+    {
+      "id": "ser-8",
+      "iconName": "Globe",
+      "title": "Offshore Development Staffing",
+      "description": "Access global engineering talent pools and scale your development capacities with certified remote professionals.",
+      "features": [
+        "Cost-Efficient Scaling",
+        "Overlapping Working Hours",
+        "Global Engineering Centers",
+        "Dedicated Security Infrastructure"
+      ],
+      "image": "/offshore-staffing.svg",
+      "href": "/services/offshore-staffing"
+    },
+    {
+      "id": "ser-9",
+      "iconName": "Shield",
+      "title": "Global Employer of Record (EOR)",
+      "description": "Compliant onboarding, payroll administration, and benefits management for remote developers based worldwide.",
+      "features": [
+        "100% Legal Compliance",
+        "Localized Contracts",
+        "Global Payroll Processing",
+        "Multi-Currency Payments"
+      ],
+      "image": "/global-eor.svg",
+      "href": "/services/global-eor"
+    },
+    {
+      "id": "ser-10",
+      "iconName": "TrendingUp",
+      "title": "Talent Mapping & Analytics",
+      "description": "Market intelligence reports offering insights into software developer availability, compensation standards, and hiring trends.",
+      "features": [
+        "Competitor Hiring Research",
+        "Salary Benchmark Reports",
+        "Location Feasibility Studies",
+        "Skillset Density Mapping"
+      ],
+      "image": "/talent-analytics.svg",
+      "href": "/services/talent-mapping"
+    },
+    {
+      "id": "ser-11",
+      "iconName": "Terminal",
+      "title": "Software Engineer Recruitment",
+      "description": "Targeted sourcing of full-stack, backend, frontend, and mobile engineers proficient in modern tech stacks.",
+      "features": [
+        "Full-Stack JS/TS Sourcing",
+        "Java, Go, & Python Specialists",
+        "React, Angular & Vue Experts",
+        "iOS & Android Developers"
+      ],
+      "image": "/software-recruitment.svg",
+      "href": "/services/software-recruitment"
+    },
+    {
+      "id": "ser-12",
+      "iconName": "Cloud",
+      "title": "Cloud & DevOps Recruiting",
+      "description": "Placing experienced infrastructure, platform, and DevOps engineers skilled in cloud ecosystems and CI/CD pipelines.",
+      "features": [
+        "AWS, Azure & GCP Specialists",
+        "Kubernetes & Docker Experts",
+        "Terraform & IaC Professionals",
+        "Site Reliability Engineers (SRE)"
+      ],
+      "image": "/devops-recruiting.svg",
+      "href": "/services/devops-recruiting"
+    }
+  ],
+  "industries": [
+    {
+      "id": "ind-1",
+      "title": "Software Development & SaaS",
+      "description": "Sourcing high-impact software developers, product managers, and UI/UX designers to build state-of-the-art SaaS applications.",
+      "iconName": "Code",
+      "color": "bg-accent",
+      "slug": "software-saas",
+      "image": "/industry-saas.svg",
+      "features": [
+        "Agile Product Development Teams",
+        "SaaS Architecture Experts",
+        "Scalable Cloud Infrastructure Staff",
+        "Mobile App Engineering Talents"
+      ]
+    },
+    {
+      "id": "ind-2",
+      "title": "Fintech & Blockchain Systems",
+      "description": "Recruiting specialized developers for high-frequency trading platforms, secure payment gateways, and decentralized integrations.",
+      "iconName": "DollarSign",
+      "color": "bg-sprinklr-purple",
+      "slug": "fintech-blockchain",
+      "image": "/industry-fintech.svg",
+      "features": [
+        "High-Throughput System Sourcing",
+        "Crypto & Smart Contract Developers",
+        "PCI-DSS Compliance IT Staff",
+        "Quantitative Engineering Talents"
+      ]
+    },
+    {
+      "id": "ind-3",
+      "title": "Healthcare & Biotech IT",
+      "description": "Placing certified health tech professionals, bioinformatics engineers, and HIPAA-compliant software development experts.",
+      "iconName": "Heart",
+      "color": "bg-sprinklr-green",
+      "slug": "healthcare-biotech",
+      "image": "/industry-healthcare.svg",
+      "features": [
+        "HIPAA/GDPR Compliance Tech Talent",
+        "Bioinformatics & ML Engineers",
+        "EHR & Medical System Integrators",
+        "Digital Health Software Architects"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "res-1",
+      "title": "Tech Hiring Guide 2026",
+      "description": "A comprehensive roadmap outlining how to recruit, assess, and retain elite software engineers in a highly competitive market.",
+      "iconName": "Book",
+      "link": "#",
+      "color": "bg-accent"
+    },
+    {
+      "id": "res-2",
+      "title": "Optimizing RPO & Staffing Costs",
+      "description": "Learn how outsourcing technical sourcing and screening to specialized partners reduces hiring overhead by up to 40%.",
+      "iconName": "FileText",
+      "link": "#",
+      "color": "bg-sprinklr-purple"
+    },
+    {
+      "id": "res-3",
+      "title": "Remote Developer Onboarding Manual",
+      "description": "Step-by-step instructions to set up workflows, payroll compliance, and security tooling for remote software teams.",
+      "iconName": "Download",
+      "link": "#",
+      "color": "bg-sprinklr-green"
+    }
+  ],
+  "benefits": [
+    {
+      "id": "ben-1",
+      "title": "Flexible Work Culture",
+      "description": "Hybrid and remote working options that allow you to balance productivity with your personal life.",
+      "iconName": "Calendar"
+    },
+    {
+      "id": "ben-2",
+      "title": "High-Impact Clients",
+      "description": "Work with fast-growing SaaS startups, established unicorn enterprises, and Fortune 500 tech leaders.",
+      "iconName": "Globe"
+    },
+    {
+      "id": "ben-3",
+      "title": "Career Growth",
+      "description": "Structured career paths, commission structures, and ongoing training to fast-track your path to leadership.",
+      "iconName": "TrendingUp"
+    }
+  ],
+  "partnerBenefits": [
+    {
+      "id": "pb-1",
+      "title": "Vendor Managed Services (VMS)",
+      "description": "Partner with Octaleads to streamline talent workflows, payroll integration, and candidate submittals.",
+      "iconName": "Handshake",
+      "color": "bg-blue-500",
+      "link": "/contact"
+    },
+    {
+      "id": "pb-2",
+      "title": "On-Demand Talent Scaling",
+      "description": "Equip your agency or company with quick access to thoroughly vetted developer pipelines.",
+      "iconName": "GraduationCap",
+      "color": "bg-orange-500",
+      "link": "/services"
+    },
+    {
+      "id": "pb-3",
+      "title": "Co-Sourced Recruiting",
+      "description": "Leverage our recruiters and technical assessments team to deliver niche candidates for your complex projects.",
+      "iconName": "Zap",
+      "color": "bg-green-500",
+      "link": "/services"
+    }
+  ],
+  "leadership": [
+    {
+      "id": "lead-1",
+      "name": "Prasad Rao",
+      "role": "Founder & Managing Director",
+      "description": "Over 20 years of IT recruitment and staffing industry experience, guiding global brands through complex talent acquisitions."
+    },
+    {
+      "id": "lead-2",
+      "name": "Srinivas Goud",
+      "role": "Director - Tech Recruitment",
+      "description": "Certified technical sourcing specialist with deep expertise in vetting developers, cloud engineers, and technical leaders."
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "iconName": "Briefcase",
+      "title": "Contract Staffing Solutions",
+      "subtitle": "FLEXIBLE IT TALENT",
+      "description": "Scale your technical capacity with on-demand contract developers, QA specialists, and system administrators on flexible project terms.",
+      "features": [
+        "Access to niche developers",
+        "Compliant payroll management",
+        "Flexible scale-up & scale-down",
+        "Fully managed HR compliance"
+      ],
+      "color": "bg-accent",
+      "image": "/contract-staffing.svg",
+      "link": "/products/contract-staffing"
+    },
+    {
+      "id": "prod-2",
+      "iconName": "Users",
+      "title": "Direct Hire Placement",
+      "subtitle": "PERMANENT TALENT ACQUISITION",
+      "description": "Secure the top 5% of technical professionals for full-time employee positions through our extensive sourcing and rigorous screening pipeline.",
+      "features": [
+        "In-depth technical vetting",
+        "Dedicated sourcing pipelines",
+        "Cultural fit alignment checks",
+        "Risk-free hiring guarantee"
+      ],
+      "color": "bg-sprinklr-purple",
+      "image": "/direct-hire.svg",
+      "link": "/products/direct-hire"
+    },
+    {
+      "id": "prod-3",
+      "iconName": "Layers",
+      "title": "Dedicated Tech Squads",
+      "subtitle": "COHESIVE ENGINEERING TEAMS",
+      "description": "Deploy fully functional, cross-functional engineering teams consisting of developers, product managers, and testers to execute your roadmap.",
+      "features": [
+        "Agile team synchronization",
+        "Senior tech lead oversight",
+        "Fast integration with workflows",
+        "Established development practices"
+      ],
+      "color": "bg-sprinklr-green",
+      "image": "/development-squads.svg",
+      "link": "/products/executive-search"
+    }
+  ],
+  "homeFeatures": [
+    {
+      "id": "hf-1",
+      "iconName": "Briefcase",
+      "title": "Contract IT Staffing",
+      "description": "Flexible On-Demand Talents. Onboard skilled software developers and systems engineers quickly under customizable contracts to hit target launch dates.",
+      "link": "/services/contract-staffing",
+      "linkText": "Explore Contract Staffing",
+      "underlineColor": "bg-sprinklr-blue",
+      "_index": 0
+    },
+    {
+      "id": "hf-2",
+      "iconName": "Users",
+      "title": "Direct Hire Placement",
+      "description": "Secure Permanent Tech Leaders. Target, interview, and onboard elite full-stack engineers and DevOps leads directly to your internal staff.",
+      "link": "/services/direct-hire",
+      "linkText": "Explore Permanent Hire",
+      "underlineColor": "bg-sprinklr-green"
+    },
+    {
+      "id": "hf-3",
+      "iconName": "Search",
+      "title": "Executive Tech Search",
+      "description": "Niche Headhunting Services. Find experienced CTOs, Engineering VPs, and Technical Architects who align with company expansion strategies.",
+      "link": "/services/executive-search",
+      "linkText": "Explore Executive Search",
+      "underlineColor": "bg-sprinklr-purple"
+    },
+    {
+      "id": "hf-4",
+      "iconName": "Award",
+      "title": "Recruitment Process Outsourcing",
+      "description": "Complete Recruiting Management. Optimize candidate sourcing pipelines, leverage modern ATS tooling, and optimize overall hiring cycles.",
+      "link": "/services/recruitment-process-outsourcing",
+      "linkText": "Explore RPO Solutions",
+      "underlineColor": "bg-accent"
+    },
+    {
+      "id": "hf-5",
+      "iconName": "Layers",
+      "title": "Dedicated Tech Squads",
+      "description": "Deploy Agile Project Teams. Fast-track complex software initiatives by placing cohesive squads of developers, QA, and product managers.",
+      "link": "/services/dedicated-squads",
+      "linkText": "Explore Dedicated Squads",
+      "underlineColor": "bg-[#0076d6]"
+    }
+  ],
+  "homeReasons": [
+    {
+      "id": "hr-1",
+      "iconName": "Trophy",
+      "title": "Elite Tech Network",
+      "description": "Our network comprises highly skilled tech professionals vetted by experienced software engineering architects."
+    },
+    {
+      "id": "hr-2",
+      "iconName": "Building2",
+      "title": "Deep Industry Knowledge",
+      "description": "We understand complex tech stacks, allowing us to find candidates who can contribute code on day one."
+    },
+    {
+      "id": "hr-3",
+      "iconName": "Users",
+      "title": "Tailored Candidate Vetting",
+      "description": "Every candidate undergoes technical challenges and behavioral interviews designed for your job profiles."
+    },
+    {
+      "id": "hr-4",
+      "iconName": "Zap",
+      "title": "Accelerated Hiring Cycle",
+      "description": "Our pre-screened developer pipelines reduce time-to-hire by up to 50%, saving operational time."
+    }
+  ],
+  "servicesWhyChoose": [
+    {
+      "id": "wc-1",
+      "iconName": "CheckCircle",
+      "title": "Proven Matching Algorithm",
+      "description": "We map candidate portfolios directly to team requirements, assuring accurate fit ratios and retention."
+    },
+    {
+      "id": "wc-2",
+      "iconName": "Clock",
+      "title": "Fast Placement Cycle",
+      "description": "Receive qualified candidate profiles within 48 hours, keeping your engineering plans on schedule."
+    },
+    {
+      "id": "wc-3",
+      "iconName": "ShieldCheck",
+      "title": "Risk-Free Hiring Guarantee",
+      "description": "Every placement includes a replacement guarantee period, ensuring minimal hire risk for your team."
+    }
+  ],
+  "contactMethods": [
+    {
+      "id": "cm-1",
+      "iconName": "Phone",
+      "title": "Call us",
+      "description": "Speak directly to our talent acquisition specialists.",
+      "contact": "+91 9177651034",
+      "action": "Call now",
+      "link": "tel:+919177651034",
+      "color": "bg-[#0076d6]/10 text-[#0076d6]"
+    },
+    {
+      "id": "cm-2",
+      "iconName": "Mail",
+      "title": "Email inquiries",
+      "description": "Send us your hiring needs any time.",
+      "contact": "info@octaleads.com",
+      "action": "Email us",
+      "link": "mailto:info@octaleads.com",
+      "color": "bg-[#0076d6]/10 text-[#0076d6]"
+    },
+    {
+      "id": "cm-3",
+      "iconName": "MapPin",
+      "title": "Visit office",
+      "description": "Our doors are open Monday to Friday.",
+      "contact": "Ameerpet, Hyderabad",
+      "action": "Directions",
+      "link": "https://maps.google.com",
+      "color": "bg-[#0076d6]/10 text-[#0076d6]"
+    }
+  ],
+  "pageTexts": {
+    "home": {
+      "heroLabel": "",
+      "heroTitle": "Scale Your Tech Teams with Vetted IT Talent",
+      "heroDescription": "Octaleads Technologies Pvt Ltd is a premier IT recruitment and staffing agency, connecting elite software engineers, DevOps experts, data architects, and technology leaders with high-growth enterprises globally.",
+      "sectionTitle": "We deliver intelligent, scalable, and future-ready IT staffing solutions that drive operational excellence, technology innovation, and business growth.",
+      "whyChooseTitle": "Your Trusted Partner for Tech Recruitment Excellence",
+      "whyChooseDescription": "We combine deep technical vetting, a global network of pre-screened developers, and a client-first mindset to help organizations scale their tech teams with speed and precision.",
+      "ctaTitle": "Ready to scale your tech organization?",
+      "ctaDescription": "Partner with Octaleads to access top-tier tech talent and accelerate your engineering roadmap with our flexible hiring models.",
+      "ctaButtonText": "Hire Tech Talent Now"
+    },
+    "whoWeAre": {
+      "heroTitle": "Who We Are",
+      "heroDescription": "Octaleads Technologies is a premier IT recruitment and staffing agency dedicated to helping organizations build high-performing technical teams.",
+      "heroLabel": "ABOUT US",
+      "sectionTag": "About Octaleads",
+      "storyTitle": "Our Mission & Vision",
+      "storyParagraphs": [
+        "Octaleads Technologies is a global IT recruitment partner focused on helping organizations solve software engineering bottlenecks and scale tech departments. Our recruiters combine tech backgrounds with industry networks to deliver precise, vetted hires.",
+        "Our Mission: Bridge the global developer talent gap by matching companies with verified technical experts.",
+        "Our Vision: Become the most trusted tech staffing and talent acquisition agency globally."
+      ],
+      "sectionTitle": "Our Core Values",
+      "sectionDescription": "The principles that guide our recruitment and vetting standards",
+      "stats": [
+        {
+          "value": "10+",
+          "label": "Years of Excellence"
+        }
+      ]
+    },
+    "services": {
+      "heroTitle": "IT Recruiting Solutions Designed for Real Project Outcomes",
+      "heroDescription": "We deliver industry-aligned and tech-driven recruitment services that help businesses build robust engineering and software teams.",
+      "heroLabel": "RECRUITING SERVICES",
+      "sectionTitle": "Comprehensive Staffing Solutions",
+      "sectionDescription": "From temporary contractors to full-time hires, we provide end-to-end recruitment services to support your scaling needs.",
+      "stats": [
+        {
+          "value": "500+",
+          "label": "Talents Placed"
+        },
+        {
+          "value": "10+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "15k+",
+          "label": "Vetted Candidates"
+        },
+        {
+          "value": "98%",
+          "label": "Client retention"
+        }
+      ]
+    },
+    "industries": {
+      "heroTitle": "Specialized Sourcing for Niche Industry Domains",
+      "heroDescription": "We recruit and vet candidates tailored to the distinct workflows and compliance needs of various sectors.",
+      "sectionTag": "Industries We Serve",
+      "sectionTitle": "Three Niche Sectors. One Comprehensive Talent Pool."
+    },
+    "careers": {
+      "heroTitle": "Join Octaleads Technologies",
+      "heroDescription": "Become part of an elite team shaping the future of technical recruitment and staffing solutions.",
+      "heroLabel": "CAREERS",
+      "sectionTag": "Why Octaleads?",
+      "sectionTitle": "Why Work at Octaleads?",
+      "sectionDescription": "Flexible Work Culture | High-Impact Clients | Career Growth",
+      "cultureTitle": "Open Opportunities",
+      "cultureDescription": "We are seeking skilled recruiters, sourcers, account managers, and tech vetting engineers to expand our recruitment practice.",
+      "principlesTitle": "Learning & Culture",
+      "principlesDescription": "At Octaleads, we foster a learning-driven culture where you can work on complex international accounts, grow your career path organically, and enjoy excellent work-life balance."
+    },
+    "contact": {
+      "heroLabel": "GET IN TOUCH",
+      "heroTitle": "Let's Scale Your Tech Organization Together",
+      "heroDescription": "Whether you are looking for contract software engineers, permanent team members, or specialized technical vetting, Octaleads is ready to deliver.",
+      "sectionTitle": "Get Started Today",
+      "sectionDescription": "Schedule a free consultation with our recruitment experts and discover how Octaleads can accelerate your hiring pipeline.",
+      "ctaTitle": "Contact Information",
+      "ctaDescription": "7-1-619/A/37, 101\nRevathi Apartments, Srinivas nagar\nAmeerpet, Hyderabad, Telangana\n500038"
+    },
+    "productsPage": {
+      "heroLabel": "TALENT SOLUTIONS",
+      "heroTitle": "Our Hiring Solutions",
+      "heroDescription": "Flexible staffing and talent acquisition models designed to fit your project scope, budget, and timeline.",
+      "ctaTitle": "Ready to Get Started?",
+      "ctaDescription": "Contact our tech recruitment experts to discuss your staffing requirements and get a personalized solution.",
+      "ctaButtonText": "Talk to Recruitment Experts"
+    }
+  },
+  "customPages": [],
+  "seoData": {
+    "/": {
+      "title": "Octaleads – IT Recruiting & Tech Staffing Solutions Agency",
+      "description": "Octaleads provides premier IT recruiting, contract staffing, direct hire, and dedicated software team solutions. Expert technical vetting for software engineers, DevOps, data science, and tech leadership.",
+      "keywords": "Octaleads, Octaleads Technologies, IT recruiting, tech staffing, contract staffing, direct hire, remote software engineers, developer recruitment, tech headhunters, software developer hiring, engineering recruiting",
+      "canonical": "https://octaleads.com"
+    },
+    "/products": {
+      "title": "IT Staffing Solutions & Hiring Models – Octaleads",
+      "description": "Explore flexible IT hiring models including contract staffing, direct placement, and dedicated development teams. Scale your tech organizations with vetted software developers and architects.",
+      "keywords": "IT staffing models, tech recruiting products, contract staffing solutions, permanent placement, direct hire tech, dedicated dev teams, tech talent pools, software developer staffing",
+      "canonical": "https://octaleads.com/products"
+    },
+    "/products/contract-staffing": {
+      "title": "Contract IT Staffing Solutions – Scale Tech Teams Quickly",
+      "description": "Access experienced software developers, DevOps engineers, and QAs on-demand with our flexible contract staffing solutions. Fast placement, full compliance, and zero payroll hassle.",
+      "keywords": "contract IT staffing, contract developers, tech contractors, remote developer hiring, scale development team, temporary software engineering",
+      "canonical": "https://octaleads.com/products/contract-staffing"
+    },
+    "/products/direct-hire": {
+      "title": "Direct Hire & Permanent Placement Tech Recruiting – Octaleads",
+      "description": "Secure the top 5% of technical professionals for full-time employee positions. In-depth technical screening, soft skills evaluation, and replacement guarantee.",
+      "keywords": "direct hire tech, permanent placement tech, tech recruitment permanent, software engineer recruiting permanent, hire full-time developers",
+      "canonical": "https://octaleads.com/products/direct-hire"
+    },
+    "/products/executive-search": {
+      "title": "Executive Tech Search & Headhunting – Octaleads Leadership Recruiting",
+      "description": "Retained executive search services for tech companies. Sourcing and vetting CTOs, VPs of Engineering, Directors of IT, and Principal Architects.",
+      "keywords": "executive tech search, tech headhunting, CTO recruitment, VP Engineering recruiting, IT director headhunters, technical leadership recruitment",
+      "canonical": "https://octaleads.com/products/executive-search"
+    },
+    "/services": {
+      "title": "IT Staffing & Tech Recruitment Services – Octaleads Solutions",
+      "description": "Comprehensive tech staffing services: contract staffing, direct hire, executive search, RPO, and dedicated development teams. Scale your tech teams with speed and precision.",
+      "keywords": "tech staffing services, IT recruitment services, hiring developers, RPO services, executive search IT, developer sourcing, contract-to-hire tech",
+      "canonical": "https://octaleads.com/services"
+    },
+    "/solutions": {
+      "title": "IT Staffing & Tech Recruitment Services – Octaleads Solutions",
+      "description": "Comprehensive tech staffing services: contract staffing, direct hire, executive search, RPO, and dedicated development teams. Scale your tech teams with speed and precision.",
+      "keywords": "tech staffing services, IT recruitment services, hiring developers, RPO services, executive search IT, developer sourcing, contract-to-hire tech",
+      "canonical": "https://octaleads.com/services"
+    },
+    "/industries": {
+      "title": "Tech Sourcing & Recruitment by Industry Vertical – Octaleads",
+      "description": "Specialized tech recruiting vertical solutions for SaaS & Software Development, Fintech & Blockchain, and Healthcare & Biotech IT. Domained-focused recruiters.",
+      "keywords": "industry tech recruiting, SaaS recruiting, fintech developer sourcing, healthtech software developers, domain-specific recruiting, compliance tech talent",
+      "canonical": "https://octaleads.com/industries"
+    },
+    "/industries/software-saas": {
+      "title": "SaaS & Software Development Sourcing Services",
+      "description": "Recruit top-tier full-stack developers, mobile engineers, product managers, and UI/UX designers specialized in SaaS and software products.",
+      "keywords": "SaaS recruiting, software product recruiting, UI/UX designer sourcing, mobile developer recruitment, full-stack engineer hiring",
+      "canonical": "https://octaleads.com/industries/software-saas"
+    },
+    "/industries/fintech-blockchain": {
+      "title": "Fintech & Blockchain Developer Sourcing – Specialized Recruits",
+      "description": "Placing experienced developers for high-frequency trading platforms, secure payment gateways, smart contract engineering, and quantitative modeling.",
+      "keywords": "fintech developer recruiting, blockchain sourcing, smart contract developer hiring, crypto recruiting, banking software engineer recruitment",
+      "canonical": "https://octaleads.com/industries/fintech-blockchain"
+    },
+    "/industries/healthcare-biotech": {
+      "title": "Healthcare & Biotech IT Sourcing – HIPAA-Compliant Talents",
+      "description": "Targeted recruitment of HIPAA-compliant healthcare software developers, bioinformatics engineers, and medical systems integration experts.",
+      "keywords": "healthtech recruiting, biotech engineer sourcing, HIPAA compliance developer hiring, bioinformatics recruitment, medical systems IT",
+      "canonical": "https://octaleads.com/industries/healthcare-biotech"
+    },
+    "/resources": {
+      "title": "IT Recruitment & Sourcing Resources – Octaleads Hub",
+      "description": "Access guides, documentation, salary reports, hiring tips, and FAQ for technical recruitment and staffing practices.",
+      "keywords": "tech hiring resources, staffing guide, hiring software developers, developer onboarding tips, developer salary surveys, recruiting FAQ",
+      "canonical": "https://octaleads.com/resources"
+    },
+    "/resources/faq": {
+      "title": "IT Recruiting FAQ – Technical Staffing Frequently Asked Questions",
+      "description": "Get answers to frequently asked questions about tech staffing, remote developer vetting, replacement guarantees, and RPO compliance.",
+      "keywords": "IT recruiting FAQ, tech staffing questions, hiring developers FAQ, software placement support",
+      "canonical": "https://octaleads.com/resources/faq"
+    },
+    "/resources/employees": {
+      "title": "Talent Team & Sourcing Specialists – Octaleads",
+      "description": "Meet our dedicated technical recruiters, sourcers, account managers, and domain vetting experts at Octaleads.",
+      "keywords": "tech recruiters team, sourcing team, technical vetters, recruiting experts, talent acquisition team",
+      "canonical": "https://octaleads.com/resources/employees"
+    },
+    "/resources/skills": {
+      "title": "Vetted Skill Sets & Tech Stacks – Elite Candidate Profiles",
+      "description": "Explore the range of technical skill sets we vet: JavaScript/TypeScript, Java, Python, Go, DevOps pipelines, AWS, Azure, and data science ecosystems.",
+      "keywords": "vetted tech skills, developer skill sets, tech stack screening, software engineer competencies",
+      "canonical": "https://octaleads.com/resources/skills"
+    },
+    "/resources/capital": {
+      "title": "Capital & Investments – Financial Stability for Client Staffing",
+      "description": "Understanding the solid financial foundation supporting our candidate payroll operations and global contractor payroll administration.",
+      "keywords": "staffing financial stability, payroll funding, hiring backing",
+      "canonical": "https://octaleads.com/resources/capital"
+    },
+    "/resources/placements": {
+      "title": "Developer Placements & Success Records – Octaleads",
+      "description": "Read our success metrics for software developers placed in top enterprises. 98% retention rates and fast onboarding times.",
+      "keywords": "developer placement success, candidate placement track record, tech hire results",
+      "canonical": "https://octaleads.com/resources/placements"
+    },
+    "/partners": {
+      "title": "Talent & Staffing Agency Partner Program – Octaleads",
+      "description": "Partner with Octaleads to extend candidate delivery, collaborate on high-niche technical searches, and utilize shared developer pools.",
+      "keywords": "staffing agency partnership, recruiter network, shared talent pool, developer sourcing partner",
+      "canonical": "https://octaleads.com/partners"
+    },
+    "/about": {
+      "title": "About Octaleads Technologies – IT Staffing Agency",
+      "description": "Discover our story, mission, and dedication to bridging the global engineering gap with vetted IT staffing and direct hire solutions.",
+      "keywords": "about Octaleads, IT staffing agency story, technical recruiters about, hiring agency mission",
+      "canonical": "https://octaleads.com/about"
+    },
+    "/who-we-are": {
+      "title": "Who We Are – Technical Sourcing Specialists",
+      "description": "Meet our team of tech recruiters and developers committed to vetting, hiring, and onboarding top software engineers for our clients.",
+      "keywords": "Who we are Octaleads, technical sourcing team, software recruitment team",
+      "canonical": "https://octaleads.com/who-we-are"
+    },
+    "/contact": {
+      "title": "Contact Tech Recruiting Specialists – Octaleads Staffing",
+      "description": "Contact Octaleads to discuss your software developer sourcing, temporary contractor payroll, or executive recruitment needs.",
+      "keywords": "contact tech recruiters, hire developers inquiry, staffing agency contact, tech staffing phone",
+      "canonical": "https://octaleads.com/contact"
+    },
+    "/careers": {
+      "title": "Careers at Octaleads – Join Our Tech Staffing Team",
+      "description": "Explore career opportunities inside our agency. Sourcing roles, Technical Recruiter positions, and Account Executive openings.",
+      "keywords": "recruiting agency careers, hire recruiter jobs, tech recruiter jobs, staffing agency employment",
+      "canonical": "https://octaleads.com/careers"
+    },
+    "/privacy": {
+      "title": "Privacy Policy – Octaleads Technologies",
+      "description": "Read Octaleads Technologies privacy policy to understand how we collect, use, and protect your personal information and data.",
+      "keywords": "privacy policy, Octaleads privacy, data protection, privacy statement",
+      "canonical": "https://octaleads.com/privacy"
+    },
+    "/terms": {
+      "title": "Terms of Service – Octaleads Technologies",
+      "description": "Review Octaleads Technologies terms of service and conditions for using our website and services.",
+      "keywords": "terms of service, terms and conditions, Octaleads terms, service terms",
+      "canonical": "https://octaleads.com/terms"
+    },
+    "/legal": {
+      "title": "Legal Information – Octaleads Technologies",
+      "description": "Legal information, policies, and terms for Octaleads Technologies website and services.",
+      "keywords": "legal information, legal policies, Octaleads legal, legal terms",
+      "canonical": "https://octaleads.com/legal"
+    },
+    "/cookies": {
+      "title": "Cookie Policy – Octaleads Technologies",
+      "description": "Learn about how Octaleads Technologies uses cookies on our website and how to manage your cookie preferences.",
+      "keywords": "cookie policy, cookies, cookie management, Octaleads cookies",
+      "canonical": "https://octaleads.com/cookies"
+    }
+  },
+  "formspreeId": "",
+  "branding": {
+    "companyName": "Octaleads Technologies",
+    "brandName": "Whitelabel Talent",
+    "domain": "octaleads.com",
+    "twitterHandle": "Octaleads",
+    "logoUrl": "/logo.png"
+  }
+}

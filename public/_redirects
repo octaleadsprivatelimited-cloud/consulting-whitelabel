@@ -1,0 +1,5 @@
+# SPA fallback - redirect all routes to index.html
+/*    /index.html   200
+
+# Explicit 404 handling for non-existent static files
+/404.html    /404.html   404

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-executive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1b3d" />
+      <stop offset="100%" stop-color="#002d72" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg-executive)" />
+  
+  <!-- Grid background lines -->
+  <path d="M 0,25 L 400,25 M 0,50 L 400,50 M 0,75 L 400,75 M 0,100 L 400,100 M 0,125 L 400,125 M 0,150 L 400,150 M 0,175 L 400,175 M 0,200 L 400,200 M 0,225 L 400,225" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+  <path d="M 25,0 L 25,250 M 50,0 L 50,250 M 75,0 L 75,250 M 100,0 L 100,250 M 125,0 L 125,250 M 150,0 L 150,250 M 175,0 L 175,250 M 200,0 L 200,250 M 225,0 L 225,250 M 250,0 L 250,250 M 275,0 L 275,250 M 300,0 L 300,250 M 325,0 L 325,250 M 350,0 L 350,250 M 375,0 L 375,250" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+
+  <!-- Magnifying Glass / Search Highlight -->
+  <circle cx="200" cy="140" r="30" fill="none" stroke="url(#glow-grad)" stroke-width="3" />
+  <line x1="221" y1="161" x2="245" y2="185" stroke="url(#glow-grad)" stroke-width="5" stroke-linecap="round" />
+  
+  <!-- Highlighted Executive Profile -->
+  <g transform="translate(200, 140)">
+    <path d="M -10,12 C -10,4 -2,2 0,2 C 2,2 10,4 10,12 Z M 0,-3 C 3,-3 3,-11 0,-11 C -3,-11 -3,-3 0,-3 Z" fill="#ffffff" />
+    <!-- Crown icon over leader -->
+    <path d="M -6,-15 L -3,-12 L 0,-16 L 3,-12 L 6,-15 L 4,-8 L -4,-8 Z" fill="#f59e0b" />
+  </g>
+
+  <!-- Secondary Profiles in Background -->
+  <g transform="translate(130, 130)" opacity="0.4">
+    <circle cx="0" cy="0" r="14" fill="#0d1527" stroke="#0076d6" stroke-width="1" />
+    <path d="M -5,6 C -5,2 -1,0 0,0 C 1,0 5,2 5,6 Z M 0,-3 C 2,-3 2,-7 0,-7 C -2,-7 -2,-3 0,-3 Z" fill="#ffffff" />
+  </g>
+  <g transform="translate(270, 130)" opacity="0.4">
+    <circle cx="0" cy="0" r="14" fill="#0d1527" stroke="#0076d6" stroke-width="1" />
+    <path d="M -5,6 C -5,2 -1,0 0,0 C 1,0 5,2 5,6 Z M 0,-3 C 2,-3 2,-7 0,-7 C -2,-7 -2,-3 0,-3 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Title Overlay -->
+  <text x="200" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" fill="#ffffff" font-weight="800" letter-spacing="1" text-anchor="middle">EXECUTIVE TECH SEARCH</text>
+  <text x="200" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#f59e0b" font-weight="bold" letter-spacing="2" text-anchor="middle">RETAINED TECH LEADERSHIP SEARCH</text>
+</svg>

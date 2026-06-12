@@ -1,0 +1,25 @@
+{
+  "name": "Octaleads - IT Recruiting & Staffing Solutions",
+  "short_name": "Octaleads",
+  "description": "Complete IT Recruiting & Tech Staffing Solutions",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0096d6",
+  "orientation": "portrait-primary"
+}
+

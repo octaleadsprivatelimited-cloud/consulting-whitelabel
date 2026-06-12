@@ -1,0 +1,9 @@
+{
+  "rules": {
+    // Allow anyone to read data
+    ".read": true,
+    
+    // Restrict write access to the designated administrator
+    ".write": "auth != null && auth.token.email === 'anitha.gunthala1999@gmail.com'"
+  }
+}
