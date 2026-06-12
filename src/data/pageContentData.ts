@@ -197,7 +197,7 @@ export const initialServices: ServiceItem[] = [
       "Full Payroll & Compliance",
       "Rapid Backfill Support"
     ],
-    image: "/contract-staffing.svg",
+    image: "/contract-staffing.jpg",
     href: "/services/contract-staffing"
   },
   {
@@ -212,7 +212,7 @@ export const initialServices: ServiceItem[] = [
       "Salary Benchmark Mapping",
       "Placement Guarantee Periods"
     ],
-    image: "/direct-hire.svg",
+    image: "/direct-hire.jpg",
     href: "/services/direct-hire"
   },
   {
@@ -227,7 +227,7 @@ export const initialServices: ServiceItem[] = [
       "Compensation Consulting",
       "Onboarding Advisory"
     ],
-    image: "/executive-search.svg",
+    image: "/executive-search.jpg",
     href: "/services/executive-search"
   },
   {
@@ -242,8 +242,8 @@ export const initialServices: ServiceItem[] = [
       "SLA-Driven Deliverables",
       "Scalable Hiring Capacity"
     ],
-    image: "/rpo-recruitment.svg",
-    href: "/services/recruitment-process-outsourcing"
+    image: "/rpo-recruitment.jpg",
+    href: "/services/rpo-recruitment"
   },
   {
     id: "ser-5",
@@ -256,7 +256,7 @@ export const initialServices: ServiceItem[] = [
       "Flexible Trial Periods",
       "Reduced Bad Hire Risk"
     ],
-    image: "/contract-to-hire.svg",
+    image: "/contract-to-hire.jpg",
     href: "/services/contract-to-hire"
   },
   {
@@ -270,7 +270,7 @@ export const initialServices: ServiceItem[] = [
       "Cohesive Team Workflows",
       "Rapid Mobilization"
     ],
-    image: "/development-squads.svg",
+    image: "/development-squads.jpg",
     href: "/services/dedicated-squads"
   },
   {
@@ -284,7 +284,7 @@ export const initialServices: ServiceItem[] = [
       "Soft Skill Evaluations",
       "Standardized Scoring Reports"
     ],
-    image: "/tech-vetting.svg",
+    image: "/tech-vetting.jpg",
     href: "/services/tech-vetting"
   },
   {
@@ -298,7 +298,7 @@ export const initialServices: ServiceItem[] = [
       "Global Engineering Centers",
       "Dedicated Security Infrastructure"
     ],
-    image: "/offshore-staffing.svg",
+    image: "/offshore-staffing.jpg",
     href: "/services/offshore-staffing"
   },
   {
@@ -312,7 +312,7 @@ export const initialServices: ServiceItem[] = [
       "Global Payroll Processing",
       "Multi-Currency Payments"
     ],
-    image: "/global-eor.svg",
+    image: "/global-eor.jpg",
     href: "/services/global-eor"
   },
   {
@@ -326,7 +326,7 @@ export const initialServices: ServiceItem[] = [
       "Location Feasibility Studies",
       "Skillset Density Mapping"
     ],
-    image: "/talent-analytics.svg",
+    image: "/talent-analytics.jpg",
     href: "/services/talent-mapping"
   },
   {
@@ -340,7 +340,7 @@ export const initialServices: ServiceItem[] = [
       "React, Angular & Vue Experts",
       "iOS & Android Developers"
     ],
-    image: "/software-recruitment.svg",
+    image: "/software-recruitment.jpg",
     href: "/services/software-recruitment"
   },
   {
@@ -354,7 +354,7 @@ export const initialServices: ServiceItem[] = [
       "Terraform & IaC Professionals",
       "Site Reliability Engineers (SRE)"
     ],
-    image: "/devops-recruiting.svg",
+    image: "/devops-recruiting.jpg",
     href: "/services/devops-recruiting"
   }
 ];
@@ -690,6 +690,27 @@ export const getWebsiteContent = (): WebsiteContent => {
     }
     const parsed = JSON.parse(raw);
     let dirty = false;
+
+    // Migrate old .svg images to new .jpg images
+    if (parsed.services) {
+      parsed.services = parsed.services.map((s: any) => {
+        if (s.image && s.image.endsWith('.svg')) {
+          s.image = s.image.replace('.svg', '.jpg');
+          dirty = true;
+        }
+        return s;
+      });
+    }
+    if (parsed.products) {
+      parsed.products = parsed.products.map((p: any) => {
+        if (p.image && p.image.endsWith('.svg')) {
+          p.image = p.image.replace('.svg', '.jpg');
+          dirty = true;
+        }
+        return p;
+      });
+    }
+
     // Backward compatibility merge for pageTexts
     if (!parsed.pageTexts) {
       parsed.pageTexts = initialPageTexts;
