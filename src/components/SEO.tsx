@@ -1,4 +1,4 @@
-﻿import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { useData } from "@/context/DataContext";
 
 interface SEOProps {
@@ -77,13 +77,10 @@ export const SEO = ({
       {/* Canonical URL */}
       <link rel="canonical" href={canonicalUrl} />
       
-      {/* Favicon - Using logo for all pages */}
-      <link rel="icon" type="image/png" sizes="32x32" href={logoUrl} />
-      <link rel="icon" type="image/png" sizes="16x16" href={logoUrl} />
-      <link rel="icon" type="image/png" href={logoUrl} />
-      <link rel="shortcut icon" type="image/png" href={logoUrl} />
-      <link rel="apple-touch-icon" sizes="180x180" href={logoUrl} />
-      <link rel="icon" type="image/x-icon" href={logoUrl} />
+      {/* Favicon */}
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="apple-touch-icon" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon.svg" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
