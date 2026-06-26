@@ -32,7 +32,7 @@ const Services = () => {
 
   // Fix canonical for /solutions route - should point to /services
   const seoWithCanonical = location.pathname === '/solutions'
-    ? { ...seo, canonical: 'https://Procyon Solutions.com/services' }
+    ? { ...seo, canonical: 'https://procyonsol.com/services' }
     : seo;
 
   return (

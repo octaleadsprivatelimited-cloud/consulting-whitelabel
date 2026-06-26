@@ -196,7 +196,7 @@ export const defaultFallbackContent: WebsiteContent = {
   branding: {
     companyName: "Procyon Solutions",
     brandName: "Procyon Solutions",
-    domain: "Procyon Solutions.com",
+    domain: "procyonsol.com",
     twitterHandle: "Procyon Solutions",
     logoUrl: "/logo.png"
   }

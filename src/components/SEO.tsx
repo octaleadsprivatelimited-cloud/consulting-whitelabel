@@ -27,7 +27,7 @@ export const SEO = ({
   // Branding configuration resolving with fallback to defaults
   const companyName = content?.branding?.companyName || "Procyon Solutions";
   const brandName = content?.branding?.brandName || "Procyon Solutions";
-  const domain = content?.branding?.domain || "Procyon Solutions.com";
+  const domain = content?.branding?.domain || "procyonsol.com";
   const twitterHandle = content?.branding?.twitterHandle || "Procyon Solutions";
   const logoUrl = content?.branding?.logoUrl || "/logo.png";
 
@@ -55,7 +55,7 @@ export const SEO = ({
   // Ensure canonical URL is always absolute and reflects the active domain
   const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
   const canonicalUrl = canonical 
-    ? canonical.replace(/Procyon Solutions\.com/gi, domain) 
+    ? canonical.replace(/procyonsol\.com/gi, domain) 
     : `https://${domain}${currentPath}`;
   const ogUrl = `https://${domain}${currentPath}`;
 

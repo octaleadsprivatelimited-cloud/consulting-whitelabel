@@ -2,311 +2,311 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://octaleads.com/</loc>
+    <loc>https://procyonsol.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Main Pages -->
   <url>
-    <loc>https://octaleads.com/products</loc>
+    <loc>https://procyonsol.com/products</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/products/contract-staffing</loc>
+    <loc>https://procyonsol.com/products/contract-staffing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/products/direct-hire</loc>
+    <loc>https://procyonsol.com/products/direct-hire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/products/executive-search</loc>
+    <loc>https://procyonsol.com/products/executive-search</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services</loc>
+    <loc>https://procyonsol.com/services</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/industries</loc>
+    <loc>https://procyonsol.com/industries</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources</loc>
+    <loc>https://procyonsol.com/resources</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Company Pages -->
   <url>
-    <loc>https://octaleads.com/about</loc>
+    <loc>https://procyonsol.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/who-we-are</loc>
+    <loc>https://procyonsol.com/who-we-are</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/partners</loc>
+    <loc>https://procyonsol.com/partners</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/careers</loc>
+    <loc>https://procyonsol.com/careers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/contact</loc>
+    <loc>https://procyonsol.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Industry Pages -->
   <url>
-    <loc>https://octaleads.com/industries/software-saas</loc>
+    <loc>https://procyonsol.com/industries/software-saas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/industries/fintech-blockchain</loc>
+    <loc>https://procyonsol.com/industries/fintech-blockchain</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/industries/healthcare-biotech</loc>
+    <loc>https://procyonsol.com/industries/healthcare-biotech</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Service Pages -->
   <url>
-    <loc>https://octaleads.com/services/contract-staffing</loc>
+    <loc>https://procyonsol.com/services/contract-staffing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/direct-hire</loc>
+    <loc>https://procyonsol.com/services/direct-hire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/executive-search</loc>
+    <loc>https://procyonsol.com/services/executive-search</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/recruitment-process-outsourcing</loc>
+    <loc>https://procyonsol.com/services/recruitment-process-outsourcing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/contract-to-hire</loc>
+    <loc>https://procyonsol.com/services/contract-to-hire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/dedicated-squads</loc>
+    <loc>https://procyonsol.com/services/dedicated-squads</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/tech-vetting</loc>
+    <loc>https://procyonsol.com/services/tech-vetting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/offshore-staffing</loc>
+    <loc>https://procyonsol.com/services/offshore-staffing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/global-eor</loc>
+    <loc>https://procyonsol.com/services/global-eor</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/talent-mapping</loc>
+    <loc>https://procyonsol.com/services/talent-mapping</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/software-recruitment</loc>
+    <loc>https://procyonsol.com/services/software-recruitment</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/services/devops-recruiting</loc>
+    <loc>https://procyonsol.com/services/devops-recruiting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Resource Pages -->
   <url>
-    <loc>https://octaleads.com/resources/documentation</loc>
+    <loc>https://procyonsol.com/resources/documentation</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/video-tutorials</loc>
+    <loc>https://procyonsol.com/resources/video-tutorials</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/whitepapers</loc>
+    <loc>https://procyonsol.com/resources/whitepapers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/downloads</loc>
+    <loc>https://procyonsol.com/resources/downloads</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/faq</loc>
+    <loc>https://procyonsol.com/resources/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/developer-resources</loc>
+    <loc>https://procyonsol.com/resources/developer-resources</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/training-materials</loc>
+    <loc>https://procyonsol.com/resources/training-materials</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/training-classes</loc>
+    <loc>https://procyonsol.com/resources/training-classes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/placements</loc>
+    <loc>https://procyonsol.com/resources/placements</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Human Resources -->
   <url>
-    <loc>https://octaleads.com/resources/employees</loc>
+    <loc>https://procyonsol.com/resources/employees</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/skills</loc>
+    <loc>https://procyonsol.com/resources/skills</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/leadership</loc>
+    <loc>https://procyonsol.com/resources/leadership</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Physical Resources -->
   <url>
-    <loc>https://octaleads.com/resources/facilities</loc>
+    <loc>https://procyonsol.com/resources/facilities</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/equipment</loc>
+    <loc>https://procyonsol.com/resources/equipment</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Financial Resources -->
   <url>
-    <loc>https://octaleads.com/resources/capital</loc>
+    <loc>https://procyonsol.com/resources/capital</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/revenue</loc>
+    <loc>https://procyonsol.com/resources/revenue</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Technological Resources -->
   <url>
-    <loc>https://octaleads.com/resources/software</loc>
+    <loc>https://procyonsol.com/resources/software</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/patents</loc>
+    <loc>https://procyonsol.com/resources/patents</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/research</loc>
+    <loc>https://procyonsol.com/resources/research</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Intellectual Resources -->
   <url>
-    <loc>https://octaleads.com/resources/brand</loc>
+    <loc>https://procyonsol.com/resources/brand</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/trademarks</loc>
+    <loc>https://procyonsol.com/resources/trademarks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/processes</loc>
+    <loc>https://procyonsol.com/resources/processes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Operational Resources -->
   <url>
-    <loc>https://octaleads.com/resources/supply-chain</loc>
+    <loc>https://procyonsol.com/resources/supply-chain</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/distribution</loc>
+    <loc>https://procyonsol.com/resources/distribution</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/resources/quality-control</loc>
+    <loc>https://procyonsol.com/resources/quality-control</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Legal Pages -->
   <url>
-    <loc>https://octaleads.com/privacy</loc>
+    <loc>https://procyonsol.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/legal</loc>
+    <loc>https://procyonsol.com/legal</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/cookies</loc>
+    <loc>https://procyonsol.com/cookies</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://octaleads.com/terms</loc>
+    <loc>https://procyonsol.com/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
