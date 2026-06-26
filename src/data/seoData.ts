@@ -9,7 +9,7 @@ export const seoData: Record<string, {
   "/": {
     title: "Procyon Solutions – IT Recruiting & Tech Staffing Solutions Agency",
     description: "Procyon Solutions provides premier IT recruiting, contract staffing, direct hire, and dedicated software team solutions. Expert technical vetting for software engineers, DevOps, data science, and tech leadership.",
-    keywords: "Procyon Solutions, Procyon Solutions, IT recruiting, tech staffing, contract staffing, direct hire, remote software engineers, developer recruitment, tech headhunters, software developer hiring, engineering recruiting",
+    keywords: "Procyon Solutions, Procyon Solutions, IT recruiting, tech staffing, contract staffing, direct hire, remote software engineers, developer recruitment, tech headhunters, software developer hiring, engineering recruiting, best of in the industry",
     canonical: "https://procyonsol.com",
   },
 
