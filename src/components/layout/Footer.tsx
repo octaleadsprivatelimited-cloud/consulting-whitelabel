@@ -52,8 +52,8 @@ const footerLinks: {
 };
 
 const socialLinks = [
-  { icon: Youtube, href: "https://www.youtube.com/@OctaleadsTechnologies", label: "YouTube" },
-  { icon: Linkedin, href: "https://www.linkedin.com/company/octaleads/", label: "LinkedIn" },
+  { icon: Youtube, label: "YouTube" },
+  { icon: Linkedin, label: "LinkedIn" },
 ];
 
 const legalLinks = [
@@ -67,9 +67,9 @@ export const Footer = () => {
   const { content } = useData();
   const customPages = content?.customPages || [];
 
-  const companyName = content?.branding?.companyName || "Octaleads Technologies";
-  const brandName = content?.branding?.brandName || "Octaleads";
-  const domain = content?.branding?.domain || "octaleads.com";
+  const companyName = content?.branding?.companyName || "Procyon Solutions";
+  const brandName = content?.branding?.brandName || "Procyon Solutions";
+  const domain = content?.branding?.domain || "procyonsol.com";
 
   const companyLinks = [
     ...footerLinks.Company,
@@ -151,24 +151,17 @@ export const Footer = () => {
               
               <div className="flex items-center gap-3 pt-2">
                 {socialLinks.map((social) => (
-                  <a
+                  <div
                     key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="w-8 h-8 border border-[#d2d2d2] flex items-center justify-center hover:bg-white transition-colors"
+                    className="w-8 h-8 border border-[#d2d2d2] flex items-center justify-center bg-white text-[#555555]"
                   >
-                    <social.icon className="w-4 h-4 text-[#555555] hover:text-[#0076d6]" />
-                  </a>
+                    <social.icon className="w-4 h-4" />
+                  </div>
                 ))}
               </div>
 
-              <div>
-                <Link to="/admin" className="text-[#777777] hover:text-[#0076d6] hover:underline font-semibold block text-[11px]">
-                  System Administrator Panel
-                </Link>
-              </div>
+
             </div>
           </div>
         </div>
@@ -182,12 +175,12 @@ export const Footer = () => {
               <span>© 2026 {companyName}. All rights reserved.</span>
               <span className="hidden md:inline text-[#d2d2d2]">|</span>
               <a 
-                href={`https://${domain}`} 
+                href="https://octaleads.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-[#0076d6] hover:underline"
               >
-                Developed by {brandName}
+                Developed by Octaleads Pvt Ltd
               </a>
             </div>
             

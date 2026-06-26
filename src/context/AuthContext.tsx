@@ -33,12 +33,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return () => unsubscribe();
     } else {
       // LocalStorage fallback for Mock Auth
-      const storedUser = localStorage.getItem("octaleads_admin_user");
+      const storedUser = localStorage.getItem("Procyon Solutions_admin_user");
       if (storedUser) {
         try {
           setUser(JSON.parse(storedUser));
         } catch (e) {
-          localStorage.removeItem("octaleads_admin_user");
+          localStorage.removeItem("Procyon Solutions_admin_user");
         }
       }
       setLoading(false);
@@ -67,12 +67,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         
         const mockAdmin: MockUser = {
           uid: "mock-admin-uid-12345",
-          displayName: "Octaleads Administrator",
-          email: "admin@octaleads.com",
+          displayName: "Procyon Solutions Administrator",
+          email: "admin@procyonsol.com",
           photoURL: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
         };
         
-        localStorage.setItem("octaleads_admin_user", JSON.stringify(mockAdmin));
+        localStorage.setItem("Procyon Solutions_admin_user", JSON.stringify(mockAdmin));
         setUser(mockAdmin);
         toast.success("Successfully logged in via Simulated Google OAuth!");
       } catch (error) {
@@ -96,7 +96,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setLoading(false);
       }
     } else {
-      localStorage.removeItem("octaleads_admin_user");
+      localStorage.removeItem("Procyon Solutions_admin_user");
       setUser(null);
       toast.success("Logged out from administrative session");
       setLoading(false);

@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout/Navbar";
+﻿import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
 import { motion } from "framer-motion";
@@ -18,16 +18,16 @@ const faqCategories = [
     title: "General Questions",
     questions: [
       {
-        question: "What services does Octaleads offer?",
-        answer: "Octaleads offers comprehensive IT support services, SAP workshop for all major modules, and custom software development including mobile apps and web applications. We provide end-to-end digital solutions to help transform your business.",
+        question: "What services does Procyon Solutions offer?",
+        answer: "Procyon Solutions offers comprehensive IT support services, SAP workshop for all major modules, and custom software development including mobile apps and web applications. We provide end-to-end digital solutions to help transform your business.",
       },
       {
-        question: "How do I get started with Octaleads?",
-        answer: "You can get started by contacting us at contact@octaleads.com or filling out our contact form. Our team will get back to you within 24 hours to discuss your needs and provide a customized solution.",
+        question: "How do I get started with Procyon Solutions?",
+        answer: "You can get started by contacting us at info@procyonsol.com or filling out our contact form. Our team will get back to you within 24 hours to discuss your needs and provide a customized solution.",
       },
       {
-        question: "Where is Octaleads located?",
-        answer: "Octaleads is a modern IT and SAP service company. For specific location details and to discuss your requirements, please contact us at contact@octaleads.com.",
+        question: "Where is Procyon Solutions located?",
+        answer: "Procyon Solutions is a modern IT and SAP service company. For specific location details and to discuss your requirements, please contact us at info@procyonsol.com.",
       },
     ],
   },

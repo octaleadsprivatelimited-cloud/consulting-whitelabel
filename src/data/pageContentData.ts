@@ -500,7 +500,7 @@ export const initialPartnerBenefits: PartnerBenefitItem[] = [
     id: "pb-1",
     iconName: "Handshake",
     title: "Vendor Managed Services (VMS)",
-    description: "Partner with Octaleads to streamline talent workflows, payroll integration, and candidate submittals.",
+    description: "Partner with Procyon Solutions to streamline talent workflows, payroll integration, and candidate submittals.",
     color: "bg-blue-500",
     link: "/contact"
   },
@@ -602,20 +602,20 @@ export const initialPageTexts: {
     ctaDescription: "Can't find what you're looking for? Contact our team for personalized assistance."
   },
   careers: {
-    heroTitle: "Join Octaleads Technologies",
+    heroTitle: "Join Procyon Solutions",
     heroDescription: "Become part of an elite team shaping the future of technical recruitment and staffing solutions.",
     heroLabel: "CAREERS",
-    sectionTag: "Why Octaleads?",
-    sectionTitle: "Why Work at Octaleads?",
+    sectionTag: "Why Procyon Solutions?",
+    sectionTitle: "Why Work at Procyon Solutions?",
     sectionDescription: "Flexible Work Culture | High-Impact Clients | Career Growth",
     cultureTitle: "Open Opportunities",
     cultureDescription: "We are seeking skilled recruiters, sourcers, account managers, and tech vetting engineers to expand our recruitment practice.",
     principlesTitle: "Learning & Culture",
-    principlesDescription: "At Octaleads, we foster a learning-driven culture where you can work on complex international accounts, grow your career path organically, and enjoy excellent work-life balance."
+    principlesDescription: "At Procyon Solutions, we foster a learning-driven culture where you can work on complex international accounts, grow your career path organically, and enjoy excellent work-life balance."
   },
   partners: {
     heroTitle: "Partners",
-    heroDescription: "Join our partner network and grow your business with Octaleads.",
+    heroDescription: "Join our partner network and grow your business with Procyon Solutions.",
     heroLabel: "PARTNER PROGRAM",
     ctaButtonText: "Become a Partner",
     sectionTag: "Partnership Opportunities",
@@ -624,12 +624,12 @@ export const initialPageTexts: {
   },
   whoWeAre: {
     heroTitle: "Who We Are",
-    heroDescription: "Octaleads Technologies is a premier IT recruitment and staffing agency dedicated to helping organizations build high-performing technical teams.",
+    heroDescription: "Procyon Solutions is a premier IT recruitment and staffing agency dedicated to helping organizations build high-performing technical teams.",
     heroLabel: "ABOUT US",
-    sectionTag: "About Octaleads",
+    sectionTag: "About Procyon Solutions",
     storyTitle: "Our Mission & Vision",
     storyParagraphs: [
-      "Octaleads Technologies is a global IT recruitment partner focused on helping organizations solve software engineering bottlenecks and scale tech departments. Our recruiters combine tech backgrounds with industry networks to deliver precise, vetted hires.",
+      "Procyon Solutions is a global IT recruitment partner focused on helping organizations solve software engineering bottlenecks and scale tech departments. Our recruiters combine tech backgrounds with industry networks to deliver precise, vetted hires.",
       "Our Mission: Bridge the global developer talent gap by matching companies with verified technical experts.",
       "Our Vision: Become the most trusted tech staffing and talent acquisition agency globally."
     ],
@@ -642,12 +642,12 @@ export const initialPageTexts: {
   home: {
     heroLabel: "",
     heroTitle: "Scale Your Tech Teams with Vetted IT Talent",
-    heroDescription: "Octaleads Technologies Pvt Ltd is a premier IT recruitment and staffing agency, connecting elite software engineers, DevOps experts, data architects, and technology leaders with high-growth enterprises globally.",
+    heroDescription: "Procyon Solutions Pvt Ltd is a premier IT recruitment and staffing agency, connecting elite software engineers, DevOps experts, data architects, and technology leaders with high-growth enterprises globally.",
     sectionTitle: "We deliver intelligent, scalable, and future-ready IT staffing solutions that drive operational excellence, technology innovation, and business growth.",
     whyChooseTitle: "Your Trusted Partner for Tech Recruitment Excellence",
     whyChooseDescription: "We combine deep technical vetting, a global network of pre-screened developers, and a client-first mindset to help organizations scale their tech teams with speed and precision.",
     ctaTitle: "Ready to scale your tech organization?",
-    ctaDescription: "Partner with Octaleads to access top-tier tech talent and accelerate your engineering roadmap with our flexible hiring models.",
+    ctaDescription: "Partner with Procyon Solutions to access top-tier tech talent and accelerate your engineering roadmap with our flexible hiring models.",
     ctaButtonText: "Hire Tech Talent Now"
   },
   productsPage: {
@@ -661,15 +661,15 @@ export const initialPageTexts: {
   contact: {
     heroLabel: "GET IN TOUCH",
     heroTitle: "Let's Scale Your Tech Organization Together",
-    heroDescription: "Whether you are looking for contract software engineers, permanent team members, or specialized technical vetting, Octaleads is ready to deliver.",
+    heroDescription: "Whether you are looking for contract software engineers, permanent team members, or specialized technical vetting, Procyon Solutions is ready to deliver.",
     sectionTitle: "Get Started Today",
-    sectionDescription: "Schedule a free consultation with our recruitment experts and discover how Octaleads can accelerate your hiring pipeline.",
+    sectionDescription: "Schedule a free consultation with our recruitment experts and discover how Procyon Solutions can accelerate your hiring pipeline.",
     ctaTitle: "Contact Information",
-    ctaDescription: "7-1-619/A/37, 101\nRevathi Apartments, Srinivas nagar\nAmeerpet, Hyderabad, Telangana\n500038"
+    ctaDescription: "Hyderabad, Telangana, India"
   }
 };
 
-const CONTENT_STORAGE_KEY = "octaleads_website_content";
+const CONTENT_STORAGE_KEY = "Procyon Solutions_website_content";
 
 export const getWebsiteContent = (): WebsiteContent => {
   try {

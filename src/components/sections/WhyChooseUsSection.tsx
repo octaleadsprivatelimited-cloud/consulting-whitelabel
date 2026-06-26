@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import * as Icons from "lucide-react";
 import { useData } from "@/context/DataContext";
 
@@ -23,7 +23,7 @@ export const WhyChooseUsSection = () => {
             className="space-y-6 text-left"
           >
             <span className="text-[11px] font-bold text-[#0076d6] uppercase tracking-widest block">
-              Why Choose Octaleads
+              Why Choose Procyon Solutions
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-[#1d1d1d] leading-tight">
               {whyChooseTitle}

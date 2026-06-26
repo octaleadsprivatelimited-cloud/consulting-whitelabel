@@ -1,4 +1,4 @@
-# Formspree Integration Test & Verification Guide
+﻿# Formspree Integration Test & Verification Guide
 
 ## Current Implementation Status
 
@@ -66,7 +66,7 @@
 
 ### Method 4: Email Verification
 1. **Check the email** configured in Formspree settings
-2. **Look for email** with subject: "Contact Form Submission - Octaleads"
+2. **Look for email** with subject: "Contact Form Submission - Procyon Solutions"
 3. **Verify email contains** all form fields
 
 ---
@@ -145,7 +145,7 @@ catch (error) {
   
   toast({
     title: "Error",
-    description: `Failed to send message: ${errorMessage}. Please try again or contact us directly at info@octaleads.com`,
+    description: `Failed to send message: ${errorMessage}. Please try again or contact us directly at info@procyonsol.com`,
     variant: "destructive",
   });
 }

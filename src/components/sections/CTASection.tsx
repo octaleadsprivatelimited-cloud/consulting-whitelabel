@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ export const CTASection = () => {
   const homeText = content.pageTexts?.home || {};
   
   const ctaTitle = homeText.ctaTitle || "Ready to scale your tech team?";
-  const ctaDescription = homeText.ctaDescription || "Connect with Octaleads to discover how our IT recruiting & staffing services can help you scale your engineering team and drive software growth.";
+  const ctaDescription = homeText.ctaDescription || "Connect with Procyon Solutions to discover how our IT recruiting & staffing services can help you scale your engineering team and drive software growth.";
   const ctaButtonText = homeText.ctaButtonText || "Contact Us Now";
 
   return (

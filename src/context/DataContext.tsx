@@ -167,24 +167,15 @@ export const defaultFallbackContent: WebsiteContent = {
     }
   ],
   contactMethods: [
-    {
-      id: "cm-1",
-      iconName: "Phone",
-      title: "Call us",
-      description: "Speak directly to our SAP consultants.",
-      contact: "+91 9177651034",
-      action: "Call now",
-      link: "tel:+919177651034",
-      color: "bg-[#0076d6]/10 text-[#0076d6]"
-    },
+
     {
       id: "cm-2",
       iconName: "Mail",
       title: "Email support",
       description: "Send us your queries any time.",
-      contact: "info@octaleads.com",
+      contact: "info@procyonsol.com",
       action: "Email us",
-      link: "mailto:info@octaleads.com",
+      link: "mailto:info@procyonsol.com",
       color: "bg-[#0076d6]/10 text-[#0076d6]"
     },
     {
@@ -203,10 +194,10 @@ export const defaultFallbackContent: WebsiteContent = {
   seoData: initialSeoData,
   formspreeId: "",
   branding: {
-    companyName: "Octaleads Technologies",
-    brandName: "Octaleads",
-    domain: "octaleads.com",
-    twitterHandle: "Octaleads",
+    companyName: "Procyon Solutions",
+    brandName: "Procyon Solutions",
+    domain: "Procyon Solutions.com",
+    twitterHandle: "Procyon Solutions",
     logoUrl: "/logo.png"
   }
 };

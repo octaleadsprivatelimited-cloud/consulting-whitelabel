@@ -6,7 +6,7 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "0.0.0.0",
-    port: 8080,
+    port: 8081,
     historyApiFallback: true,
     proxy: {
       "/api": {
@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
     }
   },
   preview: {
-    port: 8080,
+    port: 8081,
     strictPort: true,
   },
   plugins: [react()],

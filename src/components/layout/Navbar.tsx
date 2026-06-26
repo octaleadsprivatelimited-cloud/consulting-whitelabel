@@ -74,15 +74,13 @@ const resourceCategories = [
 const locations = [
   {
     city: "Hyderabad, India",
-    address: "7-1-619/A/37, 101\nRevathi Apartments, Srinivas nagar\nAmeerpet, Hyderabad, Telangana\n500038",
-    phone: "+91-7981999562",
-    email: "info@octaleads.com"
+    address: "Hyderabad, Telangana, India",
+    email: "info@procyonsol.com"
   },
   {
     city: "Global Presence",
     address: "Serving clients worldwide",
-    phone: "+91-7981999562",
-    email: "info@octaleads.com"
+    email: "info@procyonsol.com"
   }
 ];
 
@@ -90,10 +88,10 @@ export const Navbar = () => {
   const { content } = useData();
   const customPages = content?.customPages || [];
 
-  const companyName = content?.branding?.companyName || "Octaleads Technologies";
-  const brandName = content?.branding?.brandName || "Octaleads";
+  const companyName = content?.branding?.companyName || "Procyon Solutions";
+  const brandName = content?.branding?.brandName || "Procyon Solutions";
   const logoUrl = content?.branding?.logoUrl || "/logo.png";
-  const brandEmail = content?.branding?.email || "info@octaleads.com";
+  const brandEmail = content?.branding?.email || "info@procyonsol.com";
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
@@ -158,11 +156,9 @@ export const Navbar = () => {
         )}>
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0 z-10">
-            <img 
-              src={logoUrl} 
-              alt={`${brandName} Logo`} 
-              className="h-[52px] md:h-[78px] w-auto transition-all duration-300"
-            />
+            <span className="text-lg md:text-xl font-bold tracking-tight text-[#0076d6]">
+              {brandName}
+            </span>
           </Link>
 
           {/* Search bar */}
@@ -225,16 +221,18 @@ export const Navbar = () => {
                               <div className="flex-1 text-left">
                                 <h4 className="text-xs font-semibold text-[#1d1d1d] mb-1">{loc.city}</h4>
                                 <p className="text-[11px] text-[#555555] leading-relaxed mb-2 whitespace-pre-line">{loc.address}</p>
-                                <div className="space-y-0.5 text-[11px]">
-                                  <a href={`tel:${loc.phone}`} className="flex items-center gap-1.5 text-[#0076d6] hover:underline">
-                                    <Phone className="w-3 h-3" />
-                                    {loc.phone}
-                                  </a>
-                                  <a href={`mailto:${loc.email}`} className="flex items-center gap-1.5 text-[#0076d6] hover:underline">
-                                    <Mail className="w-3 h-3" />
-                                    {loc.email}
-                                  </a>
-                                </div>
+                                  <div className="space-y-0.5 text-[11px]">
+                                    {loc.phone && (
+                                      <a href={`tel:${loc.phone}`} className="flex items-center gap-1.5 text-[#0076d6] hover:underline">
+                                        <Phone className="w-3 h-3" />
+                                        {loc.phone}
+                                      </a>
+                                    )}
+                                    <a href={`mailto:${loc.email}`} className="flex items-center gap-1.5 text-[#0076d6] hover:underline">
+                                      <Mail className="w-3 h-3" />
+                                      {loc.email}
+                                    </a>
+                                  </div>
                               </div>
                             </div>
                           </div>
@@ -274,11 +272,9 @@ export const Navbar = () => {
                     className="flex items-center mr-4 shrink-0"
                   >
                     <Link to="/" className="flex items-center z-10">
-                      <img 
-                        src="/logo.png" 
-                        alt="Octaleads Logo" 
-                        className="h-16 w-auto"
-                      />
+                      <span className="text-md font-bold tracking-tight text-[#0076d6]">
+                        {brandName}
+                      </span>
                     </Link>
                   </motion.div>
                 )}
@@ -457,7 +453,7 @@ export const Navbar = () => {
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search Octaleads"
+                  placeholder="Search Procyon Solutions"
                   className="w-full bg-[#f4f6f8] border border-gray-300 rounded-none py-2 pl-4 pr-10 text-xs text-[#1d1d1d] focus:outline-none"
                 />
                 <button type="submit" className="absolute right-3 top-2.5 text-gray-500">
@@ -573,10 +569,10 @@ export const Navbar = () => {
                   <User className="w-4 h-4" />
                   <span>Sign In / Admin Panel</span>
                 </Link>
-                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  <span>+91-7981999562 (Contact Us)</span>
-                </Link>
+                <a href={`mailto:${brandEmail}`} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-2">
+                  <Mail className="w-4 h-4" />
+                  <span>{brandEmail} (Contact Us)</span>
+                </a>
               </div>
             </div>
           </motion.div>

@@ -31,7 +31,7 @@ const Contact = () => {
   const sectionDescription = contactText.sectionDescription || "Fill out the form below and we'll get back to you within 24 hours.";
   
   const addressTitle = contactText.ctaTitle || "Where to find us";
-  const addressDescription = contactText.ctaDescription || "7-1-619/A/37, 101\nRevathi Apartments, Srinivas nagar\nAmeerpet, Hyderabad, Telangana\n500038";
+  const addressDescription = contactText.ctaDescription || "Hyderabad, Telangana, India";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -79,7 +79,7 @@ const Contact = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          _subject: "Contact Form Submission - Octaleads",
+          _subject: "Contact Form Submission - Procyon Solutions",
           name: formData.name,
           email: formData.email,
           company: formData.company,
@@ -133,7 +133,7 @@ const Contact = () => {
         breadcrumbs={[
           { label: "Contact" }
         ]}
-        backgroundImage="/octaleads-sap.jpg"
+        backgroundImage="/Procyon Solutions-sap.jpg"
         fullBackground={true}
         textBgWhite={true}
         extraPadding={true}
@@ -321,7 +321,7 @@ const Contact = () => {
                 <h3 className="text-sm font-semibold text-neutral-900">{addressTitle}</h3>
                 <div className="border-t border-neutral-100 pt-4 space-y-2">
                   <h4 className="text-xs font-semibold text-neutral-800">Corporate headquarters</h4>
-                  <p className="text-xs text-neutral-900 font-bold">Octaleads Technologies</p>
+                  <p className="text-xs text-neutral-900 font-bold">Procyon Solutions</p>
                   <address className="not-italic text-xs text-neutral-600 leading-relaxed space-y-1">
                     {addressDescription.split("\n").map((line, lidx) => (
                       <span key={lidx} className="block">{line.trim()}</span>

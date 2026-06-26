@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { useData } from "@/context/DataContext";
 import { Navbar } from "@/components/layout/Navbar";
@@ -37,7 +37,7 @@ const DynamicIndustry = () => {
   return (
     <div className="min-h-screen bg-white font-sans antialiased text-[#1d1d1d] flex flex-col">
       <SEO 
-        title={`${cleanMarkdown(industry.title)} Industry Talent | IT Staffing | Octaleads`}
+        title={`${cleanMarkdown(industry.title)} Industry Talent | IT Staffing | Procyon Solutions`}
         description={cleanMarkdown(industry.description)}
       />
       <Navbar />

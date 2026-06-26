@@ -29,7 +29,7 @@ const stats = [
     suffix: "", 
     label: "Email Contact",
     icon: Mail,
-    description: "info@octaleads.com"
+    description: "info@procyonsol.com"
   },
 ];
 

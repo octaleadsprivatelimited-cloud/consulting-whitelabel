@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
@@ -24,15 +24,15 @@ const Careers = () => {
   const pageTexts = content.pageTexts;
   const textContent = pageTexts?.careers || {
     heroTitle: "Join Our Team",
-    heroDescription: "Build your career with Octaleads and help transform businesses through innovative SAP solutions. We're looking for talented individuals who share our passion for excellence.",
+    heroDescription: "Build your career with Procyon Solutions and help transform businesses through innovative SAP solutions. We're looking for talented individuals who share our passion for excellence.",
     heroLabel: "CAREERS",
     sectionTag: "Why Join Us",
-    sectionTitle: "Why Work at Octaleads?",
+    sectionTitle: "Why Work at Procyon Solutions?",
     sectionDescription: "We offer more than just a job – we offer a career path filled with growth opportunities, meaningful work, and a supportive environment.",
     cultureTitle: "Our Culture",
-    cultureDescription: "Step into a workplace defined by warmth, positivity, and collaboration. At Octaleads, we balance focused work with moments to connect whether it's over a cup of coffee, a team activity, or shared successes. Our open-door and inclusive culture encourages ideas, teamwork, and continuous growth.",
+    cultureDescription: "Step into a workplace defined by warmth, positivity, and collaboration. At Procyon Solutions, we balance focused work with moments to connect whether it's over a cup of coffee, a team activity, or shared successes. Our open-door and inclusive culture encourages ideas, teamwork, and continuous growth.",
     principlesTitle: "Our Principles",
-    principlesDescription: "Octaleads Technologies is proud to be an equal employment opportunity employer. We provide fair and equal opportunities to all individuals, regardless of race, religion, gender, age, national origin, disability, marital status, or any other characteristic protected by law."
+    principlesDescription: "Procyon Solutions is proud to be an equal employment opportunity employer. We provide fair and equal opportunities to all individuals, regardless of race, religion, gender, age, national origin, disability, marital status, or any other characteristic protected by law."
   };
 
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -87,7 +87,7 @@ const Careers = () => {
     // 2. Submit to Formspree for email forwarding
     try {
       const formDataToSend = new FormData();
-      formDataToSend.append("_subject", "Job Application - Octaleads");
+      formDataToSend.append("_subject", "Job Application - Procyon Solutions");
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);
       formDataToSend.append("phone", formData.phone);
@@ -144,7 +144,7 @@ const Careers = () => {
         breadcrumbs={[
           { label: "Careers" }
         ]}
-        backgroundImage="/octaleads_careers.jpg"
+        backgroundImage="/Procyon Solutions_careers.jpg"
         backgroundPosition="center 25%"
         mobileBackgroundPosition="center 85%"
         mobileBackgroundSize="auto 120%"
@@ -243,7 +243,7 @@ const Careers = () => {
                   {textContent.principlesDescription}
                 </p>
                 <p className="leading-relaxed">
-                  Since our inception, we have grown organically by hiring the best talent and fostering a culture of excellence. We are always looking for skilled professionals to join our team. If you have relevant experience, we would love to hear from you. Please send your details to – <a href="mailto:careers@octaleads.com" className="text-[#0076d6] hover:underline font-semibold">careers@octaleads.com</a>
+                  Since our inception, we have grown organically by hiring the best talent and fostering a culture of excellence. We are always looking for skilled professionals to join our team. If you have relevant experience, we would love to hear from you. Please send your details to – <a href="mailto:info@procyonsol.com" className="text-[#0076d6] hover:underline font-semibold">info@procyonsol.com</a>
                 </p>
               </div>
             </div>

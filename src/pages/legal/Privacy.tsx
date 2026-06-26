@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout/Navbar";
+﻿import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
 import { motion } from "framer-motion";
@@ -29,7 +29,7 @@ const Privacy = () => {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">1. Introduction</h2>
             <p className="text-muted-foreground mb-6">
-              Octaleads ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+              Procyon Solutions ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">2. Information We Collect</h2>
@@ -88,8 +88,8 @@ const Privacy = () => {
             <p className="text-muted-foreground mb-6">
               If you have questions about this Privacy Policy, please contact us at:
               <br /><br />
-              <strong>Email:</strong> privacy@octaleads.com<br />
-              <strong>Address:</strong> Octaleads Technologies, India
+              <strong>Email:</strong> info@procyonsol.com<br />
+              <strong>Address:</strong> Procyon Solutions, India
             </p>
           </motion.div>
         </div>

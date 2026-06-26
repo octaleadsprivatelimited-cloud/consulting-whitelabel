@@ -29,12 +29,12 @@ const Terms = () => {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground mb-6">
-              By accessing and using the Octaleads website and services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+              By accessing and using the Procyon Solutions website and services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">2. Services Description</h2>
             <p className="text-muted-foreground mb-6">
-              Octaleads provides SAP consulting, implementation, workshop, and support services. Our services include but are not limited to SAP S/4HANA implementation, migration services, corporate workshop, and ongoing maintenance and support.
+              Procyon Solutions provides IT recruiting, executive tech search, contract staffing, and workforce solutions. Our services include but are not limited to sourcing, vetting, recruiting outsourcing, and direct hire placement of technical talent.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">3. User Obligations</h2>
@@ -49,7 +49,7 @@ const Terms = () => {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">4. Intellectual Property</h2>
             <p className="text-muted-foreground mb-6">
-              All content, trademarks, and intellectual property on our website are owned by Octaleads or its licensors. You may not reproduce, distribute, or create derivative works without our prior written consent.
+              All content, trademarks, and intellectual property on our website are owned by Procyon Solutions or its licensors. You may not reproduce, distribute, or create derivative works without our prior written consent.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">5. Service Agreements</h2>
@@ -69,12 +69,12 @@ const Terms = () => {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">8. Limitation of Liability</h2>
             <p className="text-muted-foreground mb-6">
-              To the maximum extent permitted by law, Octaleads shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services.
+              To the maximum extent permitted by law, Procyon Solutions shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">9. Indemnification</h2>
             <p className="text-muted-foreground mb-6">
-              You agree to indemnify and hold harmless Octaleads and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from your use of our services or violation of these Terms.
+              You agree to indemnify and hold harmless Procyon Solutions and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from your use of our services or violation of these Terms.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">10. Termination</h2>
@@ -95,8 +95,8 @@ const Terms = () => {
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">13. Contact Information</h2>
             <p className="text-muted-foreground mb-6">
               For questions about these Terms, please contact us at:<br />
-              <strong>Email:</strong> legal@octaleads.com<br />
-              <strong>Address:</strong> Octaleads Technologies, India
+              <strong>Email:</strong> info@procyonsol.com<br />
+              <strong>Address:</strong> Procyon Solutions, India
             </p>
           </motion.div>
         </div>

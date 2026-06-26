@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout/Navbar";
+﻿import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ const tutorialCategories = [
   {
     title: "Getting Started",
     videos: [
-      { title: "Introduction to Octaleads Services", duration: "5:23", views: "1.2K", thumbnail: "🎥" },
+      { title: "Introduction to Procyon Solutions Services", duration: "5:23", views: "1.2K", thumbnail: "🎥" },
       { title: "Setting Up Your Account", duration: "8:15", views: "890", thumbnail: "🎥" },
       { title: "Navigating the Platform", duration: "6:42", views: "1.5K", thumbnail: "🎥" },
     ],

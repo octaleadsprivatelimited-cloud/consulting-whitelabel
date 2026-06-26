@@ -141,10 +141,10 @@ export default function AdminPanel() {
         setTwitterHandle(content.branding.twitterHandle || "");
         setLogoUrl(content.branding.logoUrl || "");
       } else {
-        setCompanyName("Octaleads Technologies");
-        setBrandName("Octaleads");
-        setDomain("octaleads.com");
-        setTwitterHandle("Octaleads");
+        setCompanyName("Procyon Solutions");
+        setBrandName("Procyon Solutions");
+        setDomain("Procyon Solutions.com");
+        setTwitterHandle("Procyon Solutions");
         setLogoUrl("/logo.png");
       }
     }
@@ -225,7 +225,7 @@ export default function AdminPanel() {
       const url = URL.createObjectURL(dataBlob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `octaleads_content_backup_${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = `Procyon Solutions_content_backup_${new Date().toISOString().slice(0, 10)}.json`;
       a.click();
       toast.success("Database exported successfully!");
     } catch (err) {
@@ -713,7 +713,7 @@ export default function AdminPanel() {
     );
   }
 
-  const isAdmin = user && (user.email === 'anitha.gunthala1999@gmail.com' || user.email === 'admin@octaleads.com');
+  const isAdmin = user && (user.email === 'anitha.gunthala1999@gmail.com' || user.email === 'admin@procyonsol.com');
 
   if (!user) {
     return (
@@ -723,7 +723,7 @@ export default function AdminPanel() {
             <div className="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center mx-auto">
               <ShieldAlert className="w-6 h-6 text-sky-600" />
             </div>
-            <h1 className="text-2xl font-bold text-slate-900">Octaleads Console</h1>
+            <h1 className="text-2xl font-bold text-slate-900">Procyon Solutions Console</h1>
             <p className="text-sm text-slate-500">Please sign in to access website operations.</p>
           </div>
 
@@ -779,7 +779,7 @@ export default function AdminPanel() {
   return (
     <div className="min-h-screen bg-[#f8fafc] text-slate-800 flex flex-col font-sans antialiased">
       <Helmet>
-        <title>Octaleads Console | Administrative Control</title>
+        <title>Procyon Solutions Console | Administrative Control</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -793,7 +793,7 @@ export default function AdminPanel() {
             <div className="w-8 h-8 rounded-lg bg-sky-600 flex items-center justify-center text-white shadow-md shadow-sky-600/10">
               <Sliders className="w-4 h-4" />
             </div>
-            <span className="font-bold text-lg text-slate-900 tracking-tight">octaleads</span>
+            <span className="font-bold text-lg text-slate-900 tracking-tight">Procyon Solutions</span>
             <Badge className="bg-slate-100 text-slate-600 border border-slate-200 text-[9px] hover:bg-slate-100 px-1.5 py-0.5 rounded-md font-medium ml-1">CONSOLE</Badge>
           </div>
         </div>
@@ -1187,19 +1187,19 @@ export default function AdminPanel() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-1">
                       <label className="text-xs font-semibold text-slate-700">Company Legal Name</label>
-                      <Input value={companyName} onChange={(e) => setCompanyName(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. Octaleads Technologies" />
+                      <Input value={companyName} onChange={(e) => setCompanyName(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. Procyon Solutions" />
                     </div>
                     <div className="space-y-1">
                       <label className="text-xs font-semibold text-slate-700">Brand Name</label>
-                      <Input value={brandName} onChange={(e) => setBrandName(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. Octaleads" />
+                      <Input value={brandName} onChange={(e) => setBrandName(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. Procyon Solutions" />
                     </div>
                     <div className="space-y-1">
                       <label className="text-xs font-semibold text-slate-700">Canonical Domain Name</label>
-                      <Input value={domain} onChange={(e) => setDomain(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. octaleads.com" />
+                      <Input value={domain} onChange={(e) => setDomain(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. Procyon Solutions.com" />
                     </div>
                     <div className="space-y-1">
                       <label className="text-xs font-semibold text-slate-700">Twitter Handle</label>
-                      <Input value={twitterHandle} onChange={(e) => setTwitterHandle(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. Octaleads" />
+                      <Input value={twitterHandle} onChange={(e) => setTwitterHandle(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. Procyon Solutions" />
                     </div>
                   </div>
                   <div className="space-y-1">
@@ -1984,7 +1984,7 @@ export default function AdminPanel() {
                       <CardContent className="space-y-3 px-4 pb-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <Input value={newContactMethod.title} onChange={(e) => setNewContactMethod({ ...newContactMethod, title: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Title" />
-                          <Input value={newContactMethod.contact} onChange={(e) => setNewContactMethod({ ...newContactMethod, contact: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Detail value (e.g. hello@octaleads.com)" />
+                          <Input value={newContactMethod.contact} onChange={(e) => setNewContactMethod({ ...newContactMethod, contact: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Detail value (e.g. hello@procyonsol.com)" />
                           <Input value={newContactMethod.link} onChange={(e) => setNewContactMethod({ ...newContactMethod, link: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Link action (e.g. mailto:...)" />
                           <Input value={newContactMethod.action} onChange={(e) => setNewContactMethod({ ...newContactMethod, action: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Button text (e.g. Email Us)" />
                           <select value={newContactMethod.iconName} onChange={(e) => setNewContactMethod({ ...newContactMethod, iconName: e.target.value })} className="bg-white border border-slate-200 rounded-lg text-xs px-2 h-9">

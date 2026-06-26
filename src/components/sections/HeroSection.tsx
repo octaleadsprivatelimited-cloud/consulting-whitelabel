@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { useData } from "@/context/DataContext";
@@ -10,7 +10,7 @@ export const HeroSection = () => {
 
   const heroLabel = homeTexts.heroLabel || "IT Recruiting & Technical Staffing";
   const heroTitle = homeTexts.heroTitle || "Smartest Path to Tech Talent Success";
-  const heroDescription = homeTexts.heroDescription || "Unlock the full potential of your organization. Octaleads provides industry-leading IT recruitment, contract staffing, executive search, and custom developer sourcing designed to deliver measurable results.";
+  const heroDescription = homeTexts.heroDescription || "Unlock the full potential of your organization. Procyon Solutions provides industry-leading IT recruitment, contract staffing, executive search, and custom developer sourcing designed to deliver measurable results.";
 
   return (
     <section className="relative bg-white pt-[75px] md:pt-[127px] pb-2 font-sans antialiased text-[#1d1d1d]">

@@ -83,7 +83,7 @@ export const TrainingContactPopup = ({ open, onOpenChange }: TrainingContactPopu
         },
         body: JSON.stringify({
           name: name,
-          email: "training-inquiry@octaleads.com",
+          email: "info@procyonsol.com",
           company: `Phone: +91${phone}`,
           source: "Training Popup",
           message: "Inquiry for corporate training workshop details."
@@ -104,7 +104,7 @@ export const TrainingContactPopup = ({ open, onOpenChange }: TrainingContactPopu
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          _subject: "Training Workshop Inquiry - Octaleads",
+          _subject: "Training Workshop Inquiry - Procyon Solutions",
           name: name,
           phone: `+91${phone}`,
         }),

@@ -30,12 +30,12 @@ const About = () => {
   const pageTexts = content.pageTexts;
   const textContent = pageTexts?.whoWeAre || {
     heroTitle: "Who We Are",
-    heroDescription: "Octaleads is a leading provider of IT services and SAP solutions, helping businesses transform and grow.",
+    heroDescription: "Procyon Solutions is a leading provider of IT services and SAP solutions, helping businesses transform and grow.",
     heroLabel: "ABOUT US",
     sectionTag: "Our Journey",
     storyTitle: "Building the Future of Enterprise Solutions",
     storyParagraphs: [
-      "At Octaleads, we are committed to delivering exceptional IT services and SAP solutions that drive business transformation. Our team of experts combines deep technical knowledge with industry experience to help organizations achieve their digital goals.",
+      "At Procyon Solutions, we are committed to delivering exceptional IT services and SAP solutions that drive business transformation. Our team of experts combines deep technical knowledge with industry experience to help organizations achieve their digital goals.",
       "We believe in building long-term partnerships with our clients, understanding their unique challenges, and delivering tailored solutions that create lasting value."
     ],
     sectionTitle: "Our Values",
@@ -83,11 +83,10 @@ const About = () => {
             
             <div className="relative">
               <div className="border border-neutral-300 bg-white p-8 flex items-center justify-center shadow-sm rounded-none aspect-[4/3]">
-                <img 
-                  src="/logo.png" 
-                  alt="About Octaleads" 
-                  className="max-w-[80%] max-h-[80%] object-contain"
-                />
+                <div className="text-center space-y-2">
+                  <div className="text-2xl font-bold tracking-tight text-[#0076d6] uppercase">{textContent.heroTitle || "Procyon Solutions"}</div>
+                  <div className="text-[10px] text-neutral-500 uppercase tracking-widest">Enterprise Solutions</div>
+                </div>
               </div>
               {textContent.stats && textContent.stats.length > 0 && (
                 <div className="absolute -bottom-4 -right-4 bg-[#0076d6] p-4 text-white rounded-none">

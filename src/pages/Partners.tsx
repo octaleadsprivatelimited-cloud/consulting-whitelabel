@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout/Navbar";
+﻿import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
 import { SEO } from "@/components/SEO";
@@ -15,7 +15,7 @@ const Partners = () => {
   const pageTexts = content.pageTexts;
   const textContent = pageTexts?.partners || {
     heroTitle: "Partners",
-    heroDescription: "Join our partner network and grow your business with Octaleads.",
+    heroDescription: "Join our partner network and grow your business with Procyon Solutions.",
     heroLabel: "PARTNER PROGRAM",
     ctaButtonText: "Become a Partner",
     sectionTag: "Partnership Opportunities",

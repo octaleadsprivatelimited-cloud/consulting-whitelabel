@@ -1,4 +1,4 @@
-import { useLocation, Link } from "react-router-dom";
+﻿import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -24,9 +24,9 @@ const NotFound = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEO 
-        title="Page Not Found - 404 | Octaleads Technologies"
+        title="Page Not Found - 404 | Procyon Solutions"
         description="The page you are looking for does not exist. Return to our homepage or browse our products and services."
-        keywords="404, page not found, octaleads"
+        keywords="404, page not found, Procyon Solutions"
         noindex={true}
       />
       <Navbar />

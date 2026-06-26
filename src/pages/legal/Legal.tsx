@@ -29,9 +29,9 @@ const Legal = () => {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Company Information</h2>
             <p className="text-muted-foreground mb-6">
-              <strong>Company Name:</strong> Octaleads Technologies<br />
+              <strong>Company Name:</strong> Procyon Solutions<br />
               <strong>Registered Office:</strong> India<br />
-              <strong>Email:</strong> info@octaleads.com
+              <strong>Email:</strong> info@procyonsol.com
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Disclaimer</h2>
@@ -41,23 +41,20 @@ const Legal = () => {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Limitation of Liability</h2>
             <p className="text-muted-foreground mb-6">
-              In no event shall Octaleads be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+              In no event shall Procyon Solutions be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">External Links</h2>
             <p className="text-muted-foreground mb-6">
-              Through this website, you may be able to link to other websites which are not under the control of Octaleads. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+              Through this website, you may be able to link to other websites which are not under the control of Procyon Solutions. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Intellectual Property</h2>
             <p className="text-muted-foreground mb-6">
-              All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Octaleads or its content suppliers and is protected by international copyright laws. Unauthorized reproduction or distribution of this content is strictly prohibited.
+              All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Procyon Solutions or its content suppliers and is protected by international copyright laws. Unauthorized reproduction or distribution of this content is strictly prohibited.
             </p>
 
-            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">SAP Trademark Notice</h2>
-            <p className="text-muted-foreground mb-6">
-              SAP, SAP S/4HANA, SAP HANA, SAP Fiori, and other SAP products and services mentioned herein are trademarks or registered trademarks of SAP SE or its affiliates in Germany and other countries. Octaleads is an independent service provider and is not affiliated with SAP SE.
-            </p>
+
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Governing Law</h2>
             <p className="text-muted-foreground mb-6">
@@ -67,7 +64,7 @@ const Legal = () => {
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Contact</h2>
             <p className="text-muted-foreground mb-6">
               For any legal inquiries, please contact us at:<br />
-              <strong>Email:</strong> legal@octaleads.com
+              <strong>Email:</strong> info@procyonsol.com
             </p>
           </motion.div>
         </div>

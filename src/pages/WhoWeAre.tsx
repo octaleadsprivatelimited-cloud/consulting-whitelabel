@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout/Navbar";
+﻿import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
 import { SEO } from "@/components/SEO";
@@ -15,12 +15,12 @@ const WhoWeAre = () => {
   const pageTexts = content.pageTexts;
   const textContent = pageTexts?.whoWeAre || {
     heroTitle: "Who We Are",
-    heroDescription: "Octaleads Technologies is a premier IT recruitment and staffing agency dedicated to helping organizations build high-performing technical teams.",
+    heroDescription: "Procyon Solutions is a premier IT recruitment and staffing agency dedicated to helping organizations build high-performing technical teams.",
     heroLabel: "ABOUT US",
-    sectionTag: "About Octaleads",
+    sectionTag: "About Procyon Solutions",
     storyTitle: "Our Mission & Vision",
     storyParagraphs: [
-      "Octaleads Technologies is a global IT recruitment partner focused on helping organizations solve software engineering bottlenecks and scale tech departments. Our recruiters combine tech backgrounds with industry networks to deliver precise, vetted hires.",
+      "Procyon Solutions is a global IT recruitment partner focused on helping organizations solve software engineering bottlenecks and scale tech departments. Our recruiters combine tech backgrounds with industry networks to deliver precise, vetted hires.",
       "Our Mission: Bridge the global developer talent gap by matching companies with verified technical experts.",
       "Our Vision: Become the most trusted tech staffing and talent acquisition agency globally."
     ],
@@ -74,7 +74,7 @@ const WhoWeAre = () => {
               <div className="border border-neutral-300 bg-neutral-250 p-2 overflow-hidden shadow-sm rounded-none">
                 <img 
                   src="/whoweare-story.svg" 
-                  alt="Octaleads IT Recruitment Story" 
+                  alt="Procyon Solutions IT Recruitment Story" 
                   className="w-full h-auto object-cover rounded-none"
                 />
               </div>

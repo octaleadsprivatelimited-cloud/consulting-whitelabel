@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout/Navbar";
+﻿import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
 import { SEO } from "@/components/SEO";
@@ -72,7 +72,7 @@ const SapCorporateTraining = () => {
               className="relative"
             >
               <img 
-                src="/octaleads-sap.jpg" 
+                src="/Procyon Solutions-sap.jpg" 
                 alt="SAP Corporate Workshop"
                 className="rounded-2xl shadow-2xl w-full"
               />

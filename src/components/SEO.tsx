@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import { useData } from "@/context/DataContext";
 
 interface SEOProps {
@@ -25,10 +25,10 @@ export const SEO = ({
   const { content } = useData();
 
   // Branding configuration resolving with fallback to defaults
-  const companyName = content?.branding?.companyName || "Octaleads Technologies";
-  const brandName = content?.branding?.brandName || "Octaleads";
-  const domain = content?.branding?.domain || "octaleads.com";
-  const twitterHandle = content?.branding?.twitterHandle || "Octaleads";
+  const companyName = content?.branding?.companyName || "Procyon Solutions";
+  const brandName = content?.branding?.brandName || "Procyon Solutions";
+  const domain = content?.branding?.domain || "Procyon Solutions.com";
+  const twitterHandle = content?.branding?.twitterHandle || "Procyon Solutions";
   const logoUrl = content?.branding?.logoUrl || "/logo.png";
 
   const resolvedOgImage = ogImage || `https://${domain}${logoUrl}`;
@@ -39,23 +39,23 @@ export const SEO = ({
   const rawKeywords = keywords || "";
 
   const finalTitle = rawTitle
-    .replace(/Octaleads Technologies/gi, companyName)
-    .replace(/Octaleads/gi, brandName);
+    .replace(/Procyon Solutions/gi, companyName)
+    .replace(/Procyon Solutions/gi, brandName);
 
   const finalDesc = rawDesc
-    .replace(/Octaleads Technologies/gi, companyName)
-    .replace(/Octaleads/gi, brandName);
+    .replace(/Procyon Solutions/gi, companyName)
+    .replace(/Procyon Solutions/gi, brandName);
 
   const finalKeywords = rawKeywords
-    .replace(/Octaleads Technologies/gi, companyName)
-    .replace(/Octaleads/gi, brandName);
+    .replace(/Procyon Solutions/gi, companyName)
+    .replace(/Procyon Solutions/gi, brandName);
 
   const fullTitle = finalTitle.includes(brandName) ? finalTitle : `${finalTitle} | ${companyName}`;
 
   // Ensure canonical URL is always absolute and reflects the active domain
   const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
   const canonicalUrl = canonical 
-    ? canonical.replace(/octaleads\.com/gi, domain) 
+    ? canonical.replace(/Procyon Solutions\.com/gi, domain) 
     : `https://${domain}${currentPath}`;
   const ogUrl = `https://${domain}${currentPath}`;
 

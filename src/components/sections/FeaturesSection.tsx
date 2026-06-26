@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import * as Icons from "lucide-react";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ export const FeaturesSection = () => {
         {/* Header */}
         <div className="mb-12 text-left border-b border-white/10 pb-6">
           <span className="text-[11px] font-semibold text-[#0076d6] uppercase tracking-widest block mb-2">
-            Octaleads Showcase
+            Procyon Solutions Showcase
           </span>
           <h2 className="text-2xl md:text-3xl font-light tracking-tight text-white leading-tight">
             {sectionTitle}

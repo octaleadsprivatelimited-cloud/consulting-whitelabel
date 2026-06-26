@@ -32,7 +32,7 @@ const Services = () => {
 
   // Fix canonical for /solutions route - should point to /services
   const seoWithCanonical = location.pathname === '/solutions'
-    ? { ...seo, canonical: 'https://octaleads.com/services' }
+    ? { ...seo, canonical: 'https://Procyon Solutions.com/services' }
     : seo;
 
   return (
@@ -174,11 +174,10 @@ const Services = () => {
             {/* Right Column: Image Framed */}
             <div className="lg:col-span-5">
               <div className="relative border border-neutral-300 bg-white p-8 flex items-center justify-center shadow-sm rounded-none aspect-[4/3]">
-                <img
-                  src="/logo.png"
-                  alt="Why Choose Octaleads"
-                  className="max-w-[80%] max-h-[80%] object-contain"
-                />
+                <div className="text-center space-y-2">
+                  <div className="text-2xl font-bold tracking-tight text-[#0076d6] uppercase">Procyon Solutions</div>
+                  <div className="text-[10px] text-neutral-500 uppercase tracking-widest">Enterprise Solutions</div>
+                </div>
                 <div className="absolute bottom-0 left-0 bg-[#0076d6] p-4 text-white rounded-none">
                   <div className="text-2xl font-bold">10+</div>
                   <div className="text-xs text-neutral-100 font-medium">Years of Excellence</div>

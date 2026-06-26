@@ -145,7 +145,7 @@ const Cookies = () => {
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Contact Us</h2>
             <p className="text-muted-foreground mb-6">
               If you have any questions about our use of cookies, please contact us at:<br />
-              <strong>Email:</strong> privacy@octaleads.com
+              <strong>Email:</strong> info@procyonsol.com
             </p>
           </motion.div>
         </div>
