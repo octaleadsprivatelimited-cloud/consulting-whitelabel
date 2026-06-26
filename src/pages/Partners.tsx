@@ -1,4 +1,4 @@
-﻿import { Navbar } from "@/components/layout/Navbar";
+import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHero } from "@/components/sections/PageHero";
 import { SEO } from "@/components/SEO";
@@ -36,7 +36,7 @@ const Partners = () => {
         breadcrumbs={[
           { label: "Partners" }
         ]}
-        backgroundImage="/sangrinyx_partners.jpeg"
+        backgroundImage="/partners_hero.jpg"
         backgroundPosition="90% center"
         backgroundSize="auto 100%"
         mobileBackgroundPosition="center"
