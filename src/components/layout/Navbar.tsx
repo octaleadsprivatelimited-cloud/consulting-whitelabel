@@ -157,7 +157,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0 z-10">
             <span className="text-lg md:text-xl font-bold tracking-tight text-[#0076d6]">
-              {brandName}
+              {companyName}
             </span>
           </Link>
 
@@ -168,7 +168,7 @@ export const Navbar = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={`Search ${brandName}`}
+                placeholder={`Search ${companyName}`}
                 className="w-full bg-[#f4f6f8] border border-gray-300 rounded-full py-1.5 pl-4 pr-10 text-xs text-[#1d1d1d] focus:outline-none focus:border-[#0076d6] focus:bg-white transition-all"
               />
               <button type="submit" className="absolute right-3 top-2 text-gray-500 hover:text-[#0076d6]">
@@ -273,7 +273,7 @@ export const Navbar = () => {
                   >
                     <Link to="/" className="flex items-center z-10">
                       <span className="text-md font-bold tracking-tight text-[#0076d6]">
-                        {brandName}
+                        {companyName}
                       </span>
                     </Link>
                   </motion.div>
