@@ -525,7 +525,7 @@ export const initialPartnerBenefits: PartnerBenefitItem[] = [
 export const initialLeadership: LeadershipItem[] = [
   {
     id: "lead-1",
-    name: "Prasad Rao",
+    name: "Vinay Kumar Annapureddy",
     role: "Founder & Managing Director",
     description: "Over 20 years of IT recruitment and staffing industry experience, guiding global brands through complex talent acquisitions."
   },
