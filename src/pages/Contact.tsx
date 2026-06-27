@@ -271,20 +271,23 @@ const Contact = () => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="interest" className="text-xs font-semibold text-neutral-800">
-                      Area of interest
+                      Service / Hiring Needs
                     </Label>
                     <Select
                       value={formData.interest}
                       onValueChange={(value) => setFormData({ ...formData, interest: value })}
                     >
                       <SelectTrigger className="rounded-none border-neutral-300 h-10 text-neutral-900 focus:ring-[#0076d6]">
-                        <SelectValue placeholder="Select interest area" />
+                        <SelectValue placeholder="Select service area" />
                       </SelectTrigger>
                       <SelectContent className="rounded-none">
-                        <SelectItem value="rollout">ROLL-OUT</SelectItem>
-                        <SelectItem value="hypercare">HyperCare Support</SelectItem>
-                        <SelectItem value="support">AMS</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="contract-staffing">Contract IT Staffing</SelectItem>
+                        <SelectItem value="direct-hire">Direct Hire & Placement</SelectItem>
+                        <SelectItem value="executive-search">Executive Tech Search</SelectItem>
+                        <SelectItem value="rpo">Recruitment Process Outsourcing (RPO)</SelectItem>
+                        <SelectItem value="dedicated-teams">Dedicated Tech Squads</SelectItem>
+                        <SelectItem value="career">Career / Job Opportunities</SelectItem>
+                        <SelectItem value="other">Other Inquiry</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -292,7 +295,7 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="message" className="text-xs font-semibold text-neutral-800">
-                    Tell us about your requirements <span className="text-red-600">*</span>
+                    Describe your hiring requirements or inquiry <span className="text-red-600">*</span>
                   </Label>
                   <Textarea
                     id="message"
@@ -300,7 +303,7 @@ const Contact = () => {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
                     rows={4}
-                    placeholder="Provide details about your project, timeline, or support request..."
+                    placeholder="Tell us about the roles, technology stack, experience levels, or hiring timeline you need assistance with..."
                     className="rounded-none border-neutral-300 text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1 resize-none"
                   />
                 </div>
