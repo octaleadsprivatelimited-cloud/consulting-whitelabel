@@ -316,11 +316,35 @@ const Contact = () => {
 
             {/* Right Column: Office Card & Resources */}
             <div className="lg:col-span-5 space-y-6">
-              {/* Office Address Card */}
+              {/* USA Office Address Card */}
               <div className="bg-white border border-neutral-200 p-6 md:p-8 space-y-4 shadow-sm rounded-none">
                 <h3 className="text-sm font-semibold text-neutral-900">{addressTitle}</h3>
                 <div className="border-t border-neutral-100 pt-4 space-y-2">
-                  <h4 className="text-xs font-semibold text-neutral-800">Corporate headquarters</h4>
+                  <h4 className="text-xs font-semibold text-neutral-800">USA Headquarters</h4>
+                  <p className="text-xs text-neutral-900 font-bold">Procyon Solutions</p>
+                  <address className="not-italic text-xs text-neutral-600 leading-relaxed space-y-1">
+                    <span className="block">8 The Green, Suite B</span>
+                    <span className="block">Dover, DE 19901</span>
+                  </address>
+                </div>
+                <div className="pt-2">
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("8 The Green, Suite B, Dover, DE 19901")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-bold text-[#0076d6] hover:text-[#005ba3] hover:underline uppercase tracking-wider"
+                  >
+                    <span>Get directions</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* India Office Address Card */}
+              <div className="bg-white border border-neutral-200 p-6 md:p-8 space-y-4 shadow-sm rounded-none">
+                <h3 className="text-sm font-semibold text-neutral-900">India Office</h3>
+                <div className="border-t border-neutral-100 pt-4 space-y-2">
+                  <h4 className="text-xs font-semibold text-neutral-800">Development Center</h4>
                   <p className="text-xs text-neutral-900 font-bold">Procyon Solutions</p>
                   <address className="not-italic text-xs text-neutral-600 leading-relaxed space-y-1">
                     {addressDescription.split("\n").map((line, lidx) => (

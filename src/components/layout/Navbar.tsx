@@ -73,13 +73,13 @@ const resourceCategories = [
 
 const locations = [
   {
-    city: "Hyderabad, India",
-    address: "Hyderabad, Telangana, India",
+    city: "Dover, USA",
+    address: "8 The Green, Suite B, Dover, DE 19901",
     email: "info@procyonsol.com"
   },
   {
-    city: "Global Presence",
-    address: "Serving clients worldwide",
+    city: "Hyderabad, India",
+    address: "Hyderabad, Telangana, India",
     email: "info@procyonsol.com"
   }
 ];
