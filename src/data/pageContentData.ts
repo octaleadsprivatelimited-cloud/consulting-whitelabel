@@ -243,7 +243,7 @@ export const initialServices: ServiceItem[] = [
       "Scalable Hiring Capacity"
     ],
     image: "/rpo-recruitment.png",
-    href: "/services/rpo-recruitment"
+    href: "/services/recruitment-process-outsourcing"
   },
   {
     id: "ser-5",
