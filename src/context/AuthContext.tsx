@@ -68,7 +68,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const mockAdmin: MockUser = {
           uid: "mock-admin-uid-12345",
           displayName: "Procyon Solutions Administrator",
-          email: "admin@procyonsol.com",
+          email: "admin.procyonsolutions@gmail.com",
           photoURL: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
         };
         

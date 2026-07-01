@@ -180,6 +180,7 @@ export interface WebsiteContent {
     domain: string;
     twitterHandle?: string;
     logoUrl?: string;
+    email?: string;
   };
 }
 

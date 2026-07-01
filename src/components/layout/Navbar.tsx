@@ -71,7 +71,7 @@ const resourceCategories = [
   },
 ];
 
-const locations = [
+const locations: { city: string; address: string; email: string; phone?: string; }[] = [
   {
     city: "Dover, USA",
     address: "8 The Green, Suite B, Dover, DE 19901",

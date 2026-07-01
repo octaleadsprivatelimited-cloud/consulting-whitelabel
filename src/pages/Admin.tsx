@@ -713,7 +713,7 @@ export default function AdminPanel() {
     );
   }
 
-  const isAdmin = user && (user.email === 'anitha.gunthala1999@gmail.com' || user.email === 'admin@procyonsol.com');
+  const isAdmin = user && user.email === 'admin.procyonsolutions@gmail.com';
 
   if (!user) {
     return (
