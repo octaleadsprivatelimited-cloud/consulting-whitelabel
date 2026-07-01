@@ -395,23 +395,6 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-
-              {/* Resource Portal Card */}
-              <div className="bg-white border border-neutral-200 p-6 md:p-8 space-y-4 shadow-sm rounded-none">
-                <h3 className="text-sm font-semibold text-neutral-900">Looking for support?</h3>
-                <p className="text-xs text-neutral-600 leading-relaxed">
-                  If you are an existing customer needing immediate assistance, please log in to our customer service portal or contact your account manager directly.
-                </p>
-                <div>
-                  <Link 
-                    to="/careers" 
-                    className="inline-flex items-center gap-1 text-xs font-bold text-[#0076d6] hover:text-[#005ba3] hover:underline uppercase tracking-wider"
-                  >
-                    <span>Explore career opportunities</span>
-                    <span>→</span>
-                  </Link>
-                </div>
-              </div>
             </div>
             
           </div>
