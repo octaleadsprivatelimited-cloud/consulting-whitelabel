@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import * as Icons from "lucide-react";
 import { Link } from "react-router-dom";
@@ -11,7 +11,15 @@ export const FeaturesSection = () => {
   const featuresList = content.homeFeatures || [];
 
   return (
-    <section className="relative py-16 md:py-24 bg-[#08121d] text-white font-sans antialiased">
+    <section 
+      className="relative py-16 md:py-24 bg-[#08121d] text-white font-sans antialiased"
+      style={{
+        backgroundImage: 'linear-gradient(rgba(8, 18, 29, 0.88), rgba(8, 18, 29, 0.88)), url("/procyn-consulting.webp")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         {/* Header */}
         <div className="mb-12 text-left border-b border-white/10 pb-6">
