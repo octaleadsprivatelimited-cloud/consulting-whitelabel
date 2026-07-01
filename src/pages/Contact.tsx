@@ -376,7 +376,6 @@ const Contact = () => {
               <div className="bg-white border border-neutral-200 p-6 md:p-8 space-y-4 shadow-sm rounded-none">
                 <h3 className="text-sm font-semibold text-neutral-900">India Office</h3>
                 <div className="border-t border-neutral-100 pt-4 space-y-2">
-                  <h4 className="text-xs font-semibold text-neutral-800">Development Center</h4>
                   <p className="text-xs text-neutral-900 font-bold">Procyon Solutions</p>
                   <address className="not-italic text-xs text-neutral-600 leading-relaxed space-y-1">
                     {addressDescription.split("\n").map((line, lidx) => (
