@@ -135,7 +135,7 @@ export const PageHero = ({
               transition={{ duration: 0.5 }}
               className={cn(
                 "space-y-4",
-                textBgWhite && "bg-white/95 backdrop-blur-sm p-8 md:p-12 shadow-2xl border border-neutral-200/50 max-w-2xl text-[#1d1d1d] relative z-10"
+                textBgWhite && "bg-white/95 backdrop-blur-sm p-5 sm:p-8 md:p-12 shadow-2xl border border-neutral-200/50 max-w-2xl text-[#1d1d1d] relative z-10"
               )}
             >
               {/* Breadcrumbs inside the white box if textBgWhite is true */}
@@ -174,7 +174,7 @@ export const PageHero = ({
 
               {/* Title: Clean sans-serif light typography */}
               <h1 className={cn(
-                "text-3xl md:text-4xl lg:text-5xl font-light tracking-tight leading-tight",
+                "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight leading-tight break-words",
                 isDarkText ? "text-[#1d1d1d]" : "text-white"
               )}>
                 {title}

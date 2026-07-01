@@ -125,7 +125,6 @@ const Contact = () => {
       <SEO {...seo} />
       <Navbar />
 
-      {/* Dell-inspired Page Hero Section */}
       <PageHero 
         title={heroTitle}
         description={heroDescription}
@@ -136,7 +135,8 @@ const Contact = () => {
         backgroundImage="/Procyon Solutions-sap.jpg"
         fullBackground={true}
         textBgWhite={true}
-        extraPadding={true}
+        extraPadding={false}
+        compact={true}
       />
 
       {/* Form & Address Split Section */}
