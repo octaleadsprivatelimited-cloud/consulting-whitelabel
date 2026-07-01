@@ -139,50 +139,12 @@ const Contact = () => {
         extraPadding={true}
       />
 
-      {/* Corporate Contact Methods Grid */}
-      <section className="py-12 bg-white border-b border-neutral-200">
-        <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-            {methods.map((method, index) => {
-              const IconComponent = getIconComponent(method.iconName);
-              return (
-                <div 
-                  key={method.title || index}
-                  className="border border-neutral-200 bg-white p-6 flex flex-col justify-between min-h-[220px] rounded-none"
-                >
-                  <div className="space-y-4">
-                    <div className="text-[#0076d6] w-8 h-8 flex items-center justify-center bg-neutral-100 rounded-none">
-                      <IconComponent className="w-5 h-5" strokeWidth={1.5} />
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-semibold text-neutral-900">{method.title}</h3>
-                      <p className="text-xs text-neutral-600 mt-1 leading-relaxed">{method.description}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6 pt-4 border-t border-neutral-100 flex flex-col gap-1">
-                    <span className="text-xs font-semibold text-neutral-950">{method.contact}</span>
-                    <a 
-                      href={method.link || "#"}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-[#0076d6] hover:text-[#005ba3] hover:underline uppercase tracking-wider mt-1 group"
-                    >
-                      {method.action || "Get support"}
-                      <span className="inline-block transform transition-transform group-hover:translate-x-0.5">→</span>
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* Form & Address Split Section */}
       <section className="py-12 md:py-16 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 text-left">
             
-            {/* Left Column: Form Card */}
+            {/* Left Column: Form Card (First) */}
             <div className="lg:col-span-7 space-y-6">
               <div>
                 <h2 className="text-2xl font-light text-neutral-900 tracking-tight">{sectionTitle}</h2>
@@ -317,8 +279,75 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Right Column: Office Card & Resources */}
+            {/* Right Column: Contact Details, Addresses, & Support (Right Side) */}
             <div className="lg:col-span-5 space-y-6">
+              
+              {/* Contact Information & Channels */}
+              <div className="bg-white border border-neutral-200 p-6 md:p-8 space-y-6 shadow-sm rounded-none">
+                <h3 className="text-sm font-semibold text-neutral-900 uppercase tracking-wider pb-3 border-b border-neutral-100">
+                  Contact Channels
+                </h3>
+                <div className="space-y-6">
+                  {/* Render dynamic contact methods (Email, Phone, etc.) */}
+                  {methods.map((method, index) => {
+                    const IconComponent = getIconComponent(method.iconName);
+                    return (
+                      <div key={method.title || index} className="flex gap-4 items-start">
+                        <div className="text-[#0076d6] w-8 h-8 flex items-center justify-center bg-neutral-100 flex-shrink-0">
+                          <IconComponent className="w-4 h-4" strokeWidth={1.5} />
+                        </div>
+                        <div className="space-y-1 text-left flex-1">
+                          <h4 className="text-xs font-semibold text-neutral-900">{method.title}</h4>
+                          <p className="text-[11px] text-neutral-600 leading-relaxed">{method.description}</p>
+                          <div className="flex flex-wrap items-center gap-x-2 pt-1">
+                            <span className="text-xs font-bold text-neutral-950">{method.contact}</span>
+                            <a 
+                              href={method.link || "#"}
+                              className="text-xs font-bold text-[#0076d6] hover:text-[#005ba3] hover:underline"
+                            >
+                              {method.action || "Contact"} →
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+
+                  {/* Fallback standard contact details if methods is empty */}
+                  {methods.length === 0 && (
+                    <>
+                      <div className="flex gap-4 items-start">
+                        <div className="text-[#0076d6] w-8 h-8 flex items-center justify-center bg-neutral-100 flex-shrink-0">
+                          <Icons.Mail className="w-4 h-4" strokeWidth={1.5} />
+                        </div>
+                        <div className="space-y-1 text-left flex-1">
+                          <h4 className="text-xs font-semibold text-neutral-900">Email Inquiry</h4>
+                          <p className="text-[11px] text-neutral-600 leading-relaxed">Reach out directly for general business queries.</p>
+                          <div className="flex items-center gap-x-2 pt-1">
+                            <a 
+                              href="mailto:info@procyonsol.com"
+                              className="text-xs font-bold text-[#0076d6] hover:text-[#005ba3] hover:underline"
+                            >
+                              info@procyonsol.com →
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex gap-4 items-start">
+                        <div className="text-[#0076d6] w-8 h-8 flex items-center justify-center bg-neutral-100 flex-shrink-0">
+                          <Icons.Clock className="w-4 h-4" strokeWidth={1.5} />
+                        </div>
+                        <div className="space-y-1 text-left flex-1">
+                          <h4 className="text-xs font-semibold text-neutral-900">Business Hours</h4>
+                          <p className="text-[11px] text-neutral-600 leading-relaxed">Monday - Friday</p>
+                          <span className="text-xs font-bold text-neutral-950">9:00 AM - 6:00 PM EST</span>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+
               {/* USA Office Address Card */}
               <div className="bg-white border border-neutral-200 p-6 md:p-8 space-y-4 shadow-sm rounded-none">
                 <h3 className="text-sm font-semibold text-neutral-900">{addressTitle}</h3>
