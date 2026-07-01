@@ -134,13 +134,18 @@ export const PageHero = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className={cn(
-                "space-y-4",
-                textBgWhite && "bg-white/95 backdrop-blur-sm p-5 sm:p-8 md:p-12 shadow-2xl border border-neutral-200/50 max-w-2xl text-[#1d1d1d] relative z-10"
+                compact ? "space-y-2.5" : "space-y-4",
+                textBgWhite && cn(
+                  "bg-white/95 backdrop-blur-sm shadow-2xl border border-neutral-200/50 text-[#1d1d1d] relative z-10",
+                  compact 
+                    ? "p-4 sm:p-6 md:p-8 max-w-lg" 
+                    : "p-5 sm:p-8 md:p-12 max-w-2xl"
+                )
               )}
             >
               {/* Breadcrumbs inside the white box if textBgWhite is true */}
               {breadcrumbs.length > 0 && textBgWhite && (
-                <div className="mb-4 flex items-center gap-1.5 text-xs text-[#555555]">
+                <div className={cn("flex items-center gap-1.5 text-xs text-[#555555]", compact ? "mb-2.5" : "mb-4")}>
                   <Link to="/" className="hover:text-[#0076d6] transition-colors flex items-center">
                     <Home className="w-3.5 h-3.5" />
                   </Link>
@@ -165,16 +170,18 @@ export const PageHero = ({
               {/* Category tag label */}
               {label && (
                 <span className={cn(
-                  "text-[10px] font-bold tracking-widest uppercase block",
+                  compact ? "text-[9px] font-bold tracking-widest uppercase block" : "text-[10px] font-bold tracking-widest uppercase block",
                   isDarkText ? "text-[#0076d6]" : "text-blue-400"
                 )}>
                   {label}
                 </span>
               )}
 
-              {/* Title: Clean sans-serif light typography */}
+              {/* Title: Clean typography */}
               <h1 className={cn(
-                "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight leading-tight break-words",
+                compact
+                  ? "text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-tight leading-tight break-words"
+                  : "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight leading-tight break-words",
                 isDarkText ? "text-[#1d1d1d]" : "text-white"
               )}>
                 {title}
@@ -183,7 +190,9 @@ export const PageHero = ({
               {/* Description */}
               {description && (
                 <p className={cn(
-                  "text-xs md:text-sm leading-relaxed max-w-2xl",
+                  compact 
+                    ? "text-[11px] sm:text-xs leading-relaxed max-w-md" 
+                    : "text-xs md:text-sm leading-relaxed max-w-2xl",
                   isDarkText ? "text-[#555555]" : "text-gray-200"
                 )}>
                   {description}
