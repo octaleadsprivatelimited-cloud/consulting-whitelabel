@@ -8,8 +8,12 @@ service cloud.firestore {
       // Allow read access to anyone so the public website loads properly
       allow read: if true;
       
-      // Allow write access only to the designated administrator
-      allow write: if request.auth != null && request.auth.token.email == 'admin.procyonsolutions@gmail.com';
+      // Allow write access only to the designated administrators
+      allow write: if request.auth != null && (
+        request.auth.token.email == 'admin.procyonsolutions@gmail.com' ||
+        request.auth.token.email == 'findlocalsg@gmail.com' ||
+        request.auth.token.email.endsWith('@procyonsol.com')
+      );
     }
     
     // Safe default: deny all other collections unless explicitly allowed
