@@ -664,7 +664,7 @@ export const initialPageTexts: {
     heroTitle: "Let's Scale Your Tech Organization Together",
     heroDescription: "Whether you are looking for contract software engineers, permanent team members, or specialized technical vetting, Procyon Solutions is ready to deliver.",
     sectionTitle: "Get Started Today",
-    sectionDescription: "Schedule a free consultation with our recruitment experts and discover how Procyon Solutions can accelerate your hiring pipeline.",
+    sectionDescription: "",
     ctaTitle: "Contact Information",
     ctaDescription: "Hyderabad, Telangana, India"
   }
@@ -684,13 +684,23 @@ export const getWebsiteContent = (): WebsiteContent => {
         partnerBenefits: initialPartnerBenefits,
         leadership: initialLeadership,
         pageTexts: initialPageTexts,
-        formspreeId: "maqwrdrv"
+        formspreeId: "maqgpoyl"
       };
       localStorage.setItem(CONTENT_STORAGE_KEY, JSON.stringify(defaultContent));
       return defaultContent;
     }
     const parsed = JSON.parse(raw);
     let dirty = false;
+
+    // Migrate old Formspree IDs or consultation text to new versions
+    if (parsed.formspreeId === "maqwrdrv" || !parsed.formspreeId) {
+      parsed.formspreeId = "maqgpoyl";
+      dirty = true;
+    }
+    if (parsed.pageTexts?.contact?.sectionDescription === "Schedule a free consultation with our recruitment experts and discover how Procyon Solutions can accelerate your hiring pipeline.") {
+      parsed.pageTexts.contact.sectionDescription = "";
+      dirty = true;
+    }
 
     // Migrate old .svg or .jpg images to new .png images
     if (parsed.services) {
@@ -718,7 +728,7 @@ export const getWebsiteContent = (): WebsiteContent => {
       dirty = true;
     }
     if (!parsed.formspreeId) {
-      parsed.formspreeId = "maqwrdrv";
+      parsed.formspreeId = "maqgpoyl";
       dirty = true;
     }
     if (dirty) {

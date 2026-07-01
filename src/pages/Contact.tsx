@@ -28,7 +28,7 @@ const Contact = () => {
   const heroDescription = contactText.heroDescription || "Get in touch with our team to discuss how we can help transform your business.";
   
   const sectionTitle = contactText.sectionTitle || "Contact Us";
-  const sectionDescription = contactText.sectionDescription || "Fill out the form below and we'll get back to you within 24 hours.";
+  const sectionDescription = contactText.sectionDescription !== undefined ? contactText.sectionDescription : "Fill out the form below and we'll get back to you within 24 hours.";
   
   const addressTitle = contactText.ctaTitle || "Where to find us";
   const addressDescription = contactText.ctaDescription || "Hyderabad, Telangana, India";
@@ -148,7 +148,7 @@ const Contact = () => {
             <div className="lg:col-span-7 space-y-6">
               <div>
                 <h2 className="text-2xl font-light text-neutral-900 tracking-tight">{sectionTitle}</h2>
-                <p className="text-xs text-neutral-650 mt-2">{sectionDescription}</p>
+                {sectionDescription && <p className="text-xs text-neutral-650 mt-2">{sectionDescription}</p>}
               </div>
               
               <form
