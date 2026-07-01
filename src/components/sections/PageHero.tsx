@@ -71,7 +71,7 @@ export const PageHero = ({
             }
           : blueBackground
           ? {
-              backgroundImage: 'linear-gradient(135deg, #0076d6 0%, #f9fbff 50%, #ffffff 100%)'
+              backgroundImage: 'linear-gradient(to right, #ffffff 0%, #f9fbff 50%, #0076d6 100%)'
             }
           : showBgImage
           ? {
