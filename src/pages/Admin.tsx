@@ -521,7 +521,7 @@ export default function AdminPanel() {
 
   // 3. Services CRUD
   const [editingService, setEditingService] = useState<ServiceItem | null>(null);
-  const [newService, setNewService] = useState({ title: "", description: "", iconName: "Settings", href: "", features: "" });
+  const [newService, setNewService] = useState({ title: "", description: "", iconName: "Settings", href: "", features: "", image: "" });
   const deleteService = (id: string) => {
     const list = (webContent.services || []).filter(s => s.id !== id);
     handleSaveContentChange({ ...webContent, services: list });
@@ -535,10 +535,11 @@ export default function AdminPanel() {
       description: newService.description,
       iconName: newService.iconName,
       href: newService.href,
+      image: newService.image || "/services-background.webp",
       features: tags
     } as ServiceItem];
     handleSaveContentChange({ ...webContent, services: list });
-    setNewService({ title: "", description: "", iconName: "Settings", href: "", features: "" });
+    setNewService({ title: "", description: "", iconName: "Settings", href: "", features: "", image: "" });
   };
   const moveService = (index: number, direction: 'up' | 'down') => {
     const list = [...(webContent.services || [])];
@@ -549,7 +550,7 @@ export default function AdminPanel() {
 
   // 4. Industries CRUD
   const [editingIndustry, setEditingIndustry] = useState<IndustryItem | null>(null);
-  const [newIndustry, setNewIndustry] = useState({ title: "", description: "", iconName: "Building2", slug: "" });
+  const [newIndustry, setNewIndustry] = useState({ title: "", description: "", iconName: "Building2", slug: "", image: "" });
   const deleteIndustry = (id: string) => {
     const list = (webContent.industries || []).filter(i => i.id !== id);
     handleSaveContentChange({ ...webContent, industries: list });
@@ -561,10 +562,11 @@ export default function AdminPanel() {
       title: newIndustry.title,
       description: newIndustry.description,
       iconName: newIndustry.iconName,
-      slug: newIndustry.slug
+      slug: newIndustry.slug,
+      image: newIndustry.image || "/industries hero section background.png"
     } as IndustryItem];
     handleSaveContentChange({ ...webContent, industries: list });
-    setNewIndustry({ title: "", description: "", iconName: "Building2", slug: "" });
+    setNewIndustry({ title: "", description: "", iconName: "Building2", slug: "", image: "" });
   };
   const moveIndustry = (index: number, direction: 'up' | 'down') => {
     const list = [...(webContent.industries || [])];
@@ -1606,6 +1608,7 @@ export default function AdminPanel() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <Input value={editingService.title} onChange={(e) => setEditingService({ ...editingService, title: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Title" />
                         <Input value={editingService.href} onChange={(e) => setEditingService({ ...editingService, href: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="URL Route Link" />
+                        <Input value={editingService.image || ""} onChange={(e) => setEditingService({ ...editingService, image: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Image URL (e.g. /service1.jpg)" />
                         <Input value={(editingService.features || []).join(", ")} onChange={(e) => setEditingService({ ...editingService, features: e.target.value.split(",").map((x: string) => x.trim()).filter(Boolean) })} className="bg-white border-slate-200 text-xs h-9" placeholder="Features (comma separated)" />
                         <select value={editingService.iconName} onChange={(e) => setEditingService({ ...editingService, iconName: e.target.value })} className="bg-white border border-slate-200 rounded-lg text-xs px-2 h-9">
                           {AVAILABLE_ICONS.map(i => <option key={i} value={i}>{i}</option>)}
@@ -1650,9 +1653,10 @@ export default function AdminPanel() {
                         <CardTitle className="text-xs font-bold text-slate-700">Add New Service</CardTitle>
                       </CardHeader>
                       <CardContent className="space-y-3 px-4 pb-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <Input value={newService.title} onChange={(e) => setNewService({ ...newService, title: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Title" />
                           <Input value={newService.href} onChange={(e) => setNewService({ ...newService, href: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="URL Link (e.g. /services/dedicated-squads)" />
+                          <Input value={newService.image} onChange={(e) => setNewService({ ...newService, image: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Image URL (e.g. /service1.jpg)" />
                           <Input value={newService.features} onChange={(e) => setNewService({ ...newService, features: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Features (comma separated)" />
                           <select value={newService.iconName} onChange={(e) => setNewService({ ...newService, iconName: e.target.value })} className="bg-white border border-slate-200 rounded-lg text-xs px-2 h-9">
                             {AVAILABLE_ICONS.map(i => <option key={i} value={i}>{i}</option>)}
@@ -1684,6 +1688,7 @@ export default function AdminPanel() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <Input value={editingIndustry.title} onChange={(e) => setEditingIndustry({ ...editingIndustry, title: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Title" />
                         <Input value={editingIndustry.slug} onChange={(e) => setEditingIndustry({ ...editingIndustry, slug: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Route Slug" />
+                        <Input value={editingIndustry.image || ""} onChange={(e) => setEditingIndustry({ ...editingIndustry, image: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Image URL (e.g. /industry1.jpg)" />
                         <select value={editingIndustry.iconName} onChange={(e) => setEditingIndustry({ ...editingIndustry, iconName: e.target.value })} className="bg-white border border-slate-200 rounded-lg text-xs px-2 h-9">
                           {AVAILABLE_ICONS.map(i => <option key={i} value={i}>{i}</option>)}
                         </select>
@@ -1727,6 +1732,7 @@ export default function AdminPanel() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           <Input value={newIndustry.title} onChange={(e) => setNewIndustry({ ...newIndustry, title: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Title" />
                           <Input value={newIndustry.slug} onChange={(e) => setNewIndustry({ ...newIndustry, slug: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Slug (e.g. software-saas)" />
+                          <Input value={newIndustry.image} onChange={(e) => setNewIndustry({ ...newIndustry, image: e.target.value })} className="bg-white border-slate-200 text-xs h-9" placeholder="Image URL (e.g. /industry1.jpg)" />
                           <select value={newIndustry.iconName} onChange={(e) => setNewIndustry({ ...newIndustry, iconName: e.target.value })} className="bg-white border border-slate-200 rounded-lg text-xs px-2 h-9">
                             {AVAILABLE_ICONS.map(i => <option key={i} value={i}>{i}</option>)}
                           </select>
