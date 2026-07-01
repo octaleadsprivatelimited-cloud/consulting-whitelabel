@@ -132,7 +132,7 @@ const Contact = () => {
         breadcrumbs={[
           { label: "Contact" }
         ]}
-        backgroundImage="/Procyon Solutions-sap.jpg"
+        blueBackground={true}
         fullBackground={true}
         textBgWhite={true}
         extraPadding={false}
