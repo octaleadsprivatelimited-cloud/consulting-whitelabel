@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -13,7 +13,15 @@ export const CTASection = () => {
   const ctaButtonText = homeText.ctaButtonText || "Contact Us Now";
 
   return (
-    <section className="relative py-16 md:py-24 bg-[#0076d6] text-white font-sans antialiased">
+    <section 
+      className="relative py-16 md:py-24 bg-[#0076d6] text-white font-sans antialiased"
+      style={{
+        backgroundImage: 'linear-gradient(rgba(0, 118, 214, 0.88), rgba(0, 118, 214, 0.88)), url("/procyn-consulting.webp")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-10" style={{
         backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)`,
