@@ -14,7 +14,7 @@ export const FeaturesSection = () => {
     <section 
       className="relative py-16 md:py-24 bg-[#08121d] text-white font-sans antialiased"
       style={{
-        backgroundImage: 'linear-gradient(rgba(8, 18, 29, 0.88), rgba(8, 18, 29, 0.88)), url("/procyn-consulting.webp")',
+        backgroundImage: 'linear-gradient(rgba(8, 18, 29, 0.65), rgba(8, 18, 29, 0.65)), url("/procyn-consulting.webp")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
