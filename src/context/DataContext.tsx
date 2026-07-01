@@ -294,8 +294,16 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       // Also persist to Firebase/LocalStorage as secondary
       if (isFirebaseConfigured) {
-        const docRef = doc(db, "content", "website_data");
-        await setDoc(docRef, newContent);
+        try {
+          const docRef = doc(db, "content", "website_data");
+          await setDoc(docRef, newContent);
+        } catch (firebaseErr: any) {
+          console.warn("Failed to persist to Firestore:", firebaseErr);
+          // If the Express backend succeeded (local server development), allow it to pass
+          if (!backendSuccess) {
+            throw firebaseErr;
+          }
+        }
       } else {
         saveWebsiteContent(newContent);
       }

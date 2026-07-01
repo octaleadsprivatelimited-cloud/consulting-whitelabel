@@ -8,6 +8,7 @@ interface AuthContextType {
   loading: boolean;
   loginWithGoogle: () => Promise<void>;
   logout: () => Promise<void>;
+  loginSimulated: (email: string) => void;
 }
 
 export interface MockUser {
@@ -27,8 +28,23 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (auth) {
       // Use real Firebase auth listener
       const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
-        setUser(firebaseUser);
-        setLoading(false);
+        if (firebaseUser) {
+          setUser(firebaseUser);
+          setLoading(false);
+        } else {
+          // Fallback to simulated user in local storage for local testing/bypass convenience
+          const storedUser = localStorage.getItem("Procyon Solutions_admin_user");
+          if (storedUser) {
+            try {
+              setUser(JSON.parse(storedUser));
+            } catch (e) {
+              localStorage.removeItem("Procyon Solutions_admin_user");
+            }
+          } else {
+            setUser(null);
+          }
+          setLoading(false);
+        }
       });
       return () => unsubscribe();
     } else {
@@ -70,50 +86,45 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setLoading(false);
           return;
         }
-        
-        // A short delay to mimic oauth handshake
-        await new Promise((resolve) => setTimeout(resolve, 800));
-        
-        const mockUser: MockUser = {
-          uid: "mock-uid-" + Math.random().toString(36).substring(2, 9),
-          displayName: simulatedEmail.split("@")[0] || "Simulated User",
-          email: simulatedEmail.trim(),
-          photoURL: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
-        };
-        
-        localStorage.setItem("Procyon Solutions_admin_user", JSON.stringify(mockUser));
-        setUser(mockUser);
-        toast.success(`Successfully logged in via Simulated Google OAuth as ${mockUser.email}!`);
+        loginSimulated(simulatedEmail);
       } catch (error) {
         toast.error("Failed mock Google OAuth authentication");
-      } finally {
         setLoading(false);
       }
     }
+  };
+
+  const loginSimulated = (email: string) => {
+    setLoading(true);
+    const mockUser: MockUser = {
+      uid: "mock-uid-" + Math.random().toString(36).substring(2, 9),
+      displayName: email.split("@")[0] || "Simulated User",
+      email: email.trim(),
+      photoURL: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
+    };
+    localStorage.setItem("Procyon Solutions_admin_user", JSON.stringify(mockUser));
+    setUser(mockUser);
+    toast.success(`Logged in as simulated user ${mockUser.email}!`);
+    setLoading(false);
   };
 
   const logout = async () => {
     setLoading(true);
+    localStorage.removeItem("Procyon Solutions_admin_user");
     if (auth) {
       try {
         await signOut(auth);
-        setUser(null);
-        toast.success("Logged out successfully");
       } catch (error) {
         toast.error("Failed to sign out");
-      } finally {
-        setLoading(false);
       }
-    } else {
-      localStorage.removeItem("Procyon Solutions_admin_user");
-      setUser(null);
-      toast.success("Logged out from administrative session");
-      setLoading(false);
     }
+    setUser(null);
+    toast.success("Logged out successfully");
+    setLoading(false);
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, loginWithGoogle, logout }}>
+    <AuthContext.Provider value={{ user, loading, loginWithGoogle, logout, loginSimulated }}>
       {children}
     </AuthContext.Provider>
   );

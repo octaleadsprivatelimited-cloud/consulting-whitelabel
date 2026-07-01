@@ -112,7 +112,7 @@ const initialLeads: Lead[] = [
 ];
 
 export default function AdminPanel() {
-  const { user, loading, loginWithGoogle, logout } = useAuth();
+  const { user, loading, loginWithGoogle, logout, loginSimulated } = useAuth();
   const { content, updateContent } = useData();
   
   // Base State
@@ -774,6 +774,20 @@ export default function AdminPanel() {
             </svg>
             Sign in with Google
           </Button>
+
+          <div className="pt-2 text-center">
+            <button
+              onClick={() => {
+                const email = prompt("Enter simulated admin email:", "admin.procyonsolutions@gmail.com");
+                if (email) {
+                  loginSimulated(email);
+                }
+              }}
+              className="text-[11px] text-slate-400 hover:text-sky-600 transition-colors underline"
+            >
+              Simulate Google Sign-In (Local Host Bypass)
+            </button>
+          </div>
         </div>
       </div>
     );
