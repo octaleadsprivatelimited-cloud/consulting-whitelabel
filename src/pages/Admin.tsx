@@ -181,6 +181,29 @@ export default function AdminPanel() {
   const [scanStatus, setScanStatus] = useState("");
   const [seoScore, setSeoScore] = useState(92);
 
+  const handleLogoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (file.size > 800000) {
+      toast.error("Logo file size should be less than 800KB");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const base64 = event.target?.result as string;
+      if (base64) {
+        setLogoUrl(base64);
+        toast.success("Logo uploaded successfully! Click Apply Branding Config to save.");
+      }
+    };
+    reader.onerror = () => {
+      toast.error("Failed to read file");
+    };
+    reader.readAsDataURL(file);
+  };
+
   // Modal States
   const [isAddLeadOpen, setIsAddLeadOpen] = useState(false);
   const [isEditSeoOpen, setIsEditSeoOpen] = useState(false);
@@ -1203,8 +1226,28 @@ export default function AdminPanel() {
                     </div>
                   </div>
                   <div className="space-y-1">
-                    <label className="text-xs font-semibold text-slate-700">Logo Asset URL</label>
-                    <Input value={logoUrl} onChange={(e) => setLogoUrl(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" placeholder="e.g. /logo.png" />
+                    <label className="text-xs font-semibold text-slate-700">Logo Asset URL or Upload</label>
+                    <div className="flex gap-2">
+                      <Input value={logoUrl} onChange={(e) => setLogoUrl(e.target.value)} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg flex-1" placeholder="e.g. /logo.png" />
+                      <div className="relative">
+                        <input
+                          type="file"
+                          id="logo-upload"
+                          accept="image/*"
+                          className="hidden"
+                          onChange={handleLogoUpload}
+                        />
+                        <Button 
+                          type="button" 
+                          variant="outline" 
+                          onClick={() => document.getElementById("logo-upload")?.click()}
+                          className="border-slate-200 bg-white hover:bg-slate-50 text-xs h-9 shadow-sm"
+                        >
+                          <Upload className="w-3.5 h-3.5 mr-1" />
+                          Upload Logo
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex justify-end pt-2">
                     <Button size="sm" onClick={() => handleSaveContentChange({
