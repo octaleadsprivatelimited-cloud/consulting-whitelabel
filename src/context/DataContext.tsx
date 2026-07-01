@@ -183,9 +183,9 @@ export const defaultFallbackContent: WebsiteContent = {
       iconName: "MapPin",
       title: "Visit office",
       description: "Our doors are open Monday to Friday.",
-      contact: "Ameerpet, Hyderabad",
+      contact: "Dover, USA",
       action: "Directions",
-      link: "https://maps.google.com",
+      link: "https://www.google.com/maps/search/?api=1&query=8+The+Green%2C+Suite+B%2C+Dover%2C+DE+19901",
       color: "bg-[#0076d6]/10 text-[#0076d6]"
     }
   ],

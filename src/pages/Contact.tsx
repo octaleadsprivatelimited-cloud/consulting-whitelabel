@@ -31,7 +31,7 @@ const Contact = () => {
   const sectionDescription = contactText.sectionDescription !== undefined ? contactText.sectionDescription : "Fill out the form below and we'll get back to you within 24 hours.";
   
   const addressTitle = contactText.ctaTitle || "Where to find us";
-  const addressDescription = contactText.ctaDescription || "Hyderabad, Telangana, India";
+  const addressDescription = contactText.ctaDescription || "8 The Green, Suite B, Dover, DE 19901";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -372,29 +372,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* India Office Address Card */}
-              <div className="bg-white border border-neutral-200 p-6 md:p-8 space-y-4 shadow-sm rounded-none">
-                <h3 className="text-sm font-semibold text-neutral-900">India Office</h3>
-                <div className="border-t border-neutral-100 pt-4 space-y-2">
-                  <p className="text-xs text-neutral-900 font-bold">Procyon Solutions</p>
-                  <address className="not-italic text-xs text-neutral-600 leading-relaxed space-y-1">
-                    {addressDescription.split("\n").map((line, lidx) => (
-                      <span key={lidx} className="block">{line.trim()}</span>
-                    ))}
-                  </address>
-                </div>
-                <div className="pt-2">
-                  <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressDescription)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs font-bold text-[#0076d6] hover:text-[#005ba3] hover:underline uppercase tracking-wider"
-                  >
-                    <span>Get directions</span>
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
             </div>
             
           </div>
