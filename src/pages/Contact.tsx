@@ -155,9 +155,9 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 action={`https://formspree.io/f/${content?.formspreeId || ""}`}
                 method="POST"
-                className="bg-white border border-neutral-200 p-6 md:p-8 space-y-6 shadow-sm rounded-none"
+                className="bg-white border border-neutral-200 p-4 sm:p-6 md:p-8 space-y-4 md:space-y-6 shadow-sm rounded-none"
               >
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <Label htmlFor="name" className="text-xs font-semibold text-neutral-800">
                     Full name <span className="text-red-600">*</span>
                   </Label>
@@ -166,11 +166,11 @@ const Contact = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="rounded-none border-neutral-300 h-10 text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
+                    className="rounded-none border-neutral-300 h-9 sm:h-10 text-xs sm:text-sm text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
                   />
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <Label htmlFor="email" className="text-xs font-semibold text-neutral-800">
                     Business email <span className="text-red-600">*</span>
                   </Label>
@@ -180,12 +180,12 @@ const Contact = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
-                    className="rounded-none border-neutral-300 h-10 text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
+                    className="rounded-none border-neutral-300 h-9 sm:h-10 text-xs sm:text-sm text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                  <div className="space-y-1.5">
                     <Label htmlFor="company" className="text-xs font-semibold text-neutral-800">
                       Company <span className="text-red-600">*</span>
                     </Label>
@@ -194,10 +194,10 @@ const Contact = () => {
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       required
-                      className="rounded-none border-neutral-300 h-10 text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
+                      className="rounded-none border-neutral-300 h-9 sm:h-10 text-xs sm:text-sm text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
                     />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     <Label htmlFor="jobTitle" className="text-xs font-semibold text-neutral-800">
                       Job title
                     </Label>
@@ -205,13 +205,13 @@ const Contact = () => {
                       id="jobTitle"
                       value={formData.jobTitle}
                       onChange={(e) => setFormData({ ...formData, jobTitle: e.target.value })}
-                      className="rounded-none border-neutral-300 h-10 text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
+                      className="rounded-none border-neutral-300 h-9 sm:h-10 text-xs sm:text-sm text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                  <div className="space-y-1.5">
                     <Label htmlFor="country" className="text-xs font-semibold text-neutral-800">
                       Country/Region <span className="text-red-600">*</span>
                     </Label>
@@ -219,7 +219,7 @@ const Contact = () => {
                       value={formData.country}
                       onValueChange={(value) => setFormData({ ...formData, country: value })}
                     >
-                      <SelectTrigger className="rounded-none border-neutral-300 h-10 text-neutral-900 focus:ring-[#0076d6]">
+                      <SelectTrigger className="rounded-none border-neutral-300 h-9 sm:h-10 text-xs sm:text-sm text-neutral-900 focus:ring-[#0076d6]">
                         <SelectValue placeholder="Select country/region" />
                       </SelectTrigger>
                       <SelectContent className="rounded-none">
@@ -231,7 +231,7 @@ const Contact = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     <Label htmlFor="interest" className="text-xs font-semibold text-neutral-800">
                       Service / Hiring Needs
                     </Label>
@@ -239,7 +239,7 @@ const Contact = () => {
                       value={formData.interest}
                       onValueChange={(value) => setFormData({ ...formData, interest: value })}
                     >
-                      <SelectTrigger className="rounded-none border-neutral-300 h-10 text-neutral-900 focus:ring-[#0076d6]">
+                      <SelectTrigger className="rounded-none border-neutral-300 h-9 sm:h-10 text-xs sm:text-sm text-neutral-900 focus:ring-[#0076d6]">
                         <SelectValue placeholder="Select service area" />
                       </SelectTrigger>
                       <SelectContent className="rounded-none">
@@ -255,7 +255,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <Label htmlFor="message" className="text-xs font-semibold text-neutral-800">
                     Describe your hiring requirements or inquiry <span className="text-red-600">*</span>
                   </Label>
@@ -264,15 +264,15 @@ const Contact = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
-                    rows={4}
+                    rows={3}
                     placeholder="Tell us about the roles, technology stack, experience levels, or hiring timeline you need assistance with..."
-                    className="rounded-none border-neutral-300 text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1 resize-none"
+                    className="rounded-none border-neutral-300 text-xs sm:text-sm text-neutral-900 focus-visible:ring-[#0076d6] focus-visible:border-[#0076d6] focus-visible:ring-1 resize-none"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="rounded-none w-full h-11 bg-[#1d1d1d] hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-xs transition-colors duration-150"
+                  className="rounded-none w-full h-10 sm:h-11 bg-[#1d1d1d] hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-xs transition-colors duration-150"
                 >
                   Submit request
                 </Button>
