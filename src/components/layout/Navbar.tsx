@@ -156,9 +156,13 @@ export const Navbar = () => {
         )}>
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0 z-10">
-            <span className="text-lg md:text-xl font-bold tracking-tight text-[#0076d6]">
-              {companyName}
-            </span>
+            {logoUrl && logoUrl !== "" && logoUrl !== "/logo.png" ? (
+              <img src={logoUrl} alt={companyName} className="h-8 max-w-[180px] object-contain" />
+            ) : (
+              <span className="text-lg md:text-xl font-bold tracking-tight text-[#0076d6]">
+                {companyName}
+              </span>
+            )}
           </Link>
 
           {/* Search bar */}
@@ -272,9 +276,13 @@ export const Navbar = () => {
                     className="flex items-center mr-4 shrink-0"
                   >
                     <Link to="/" className="flex items-center z-10">
-                      <span className="text-md font-bold tracking-tight text-[#0076d6]">
-                        {companyName}
-                      </span>
+                      {logoUrl && logoUrl !== "" && logoUrl !== "/logo.png" ? (
+                        <img src={logoUrl} alt={companyName} className="h-6 max-w-[130px] object-contain" />
+                      ) : (
+                        <span className="text-md font-bold tracking-tight text-[#0076d6]">
+                          {companyName}
+                        </span>
+                      )}
                     </Link>
                   </motion.div>
                 )}
