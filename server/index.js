@@ -24,10 +24,12 @@ app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
 
-// Restrict CORS origins (accept localhost:8080 or custom FRONTEND_URL environment variable)
+// Restrict CORS origins (accept localhost:8080/8081 or custom FRONTEND_URL environment variable)
 const allowedOrigins = [
   'http://localhost:8080',
-  'http://127.0.0.1:8080'
+  'http://127.0.0.1:8080',
+  'http://localhost:8081',
+  'http://127.0.0.1:8081'
 ];
 if (process.env.FRONTEND_URL) {
   allowedOrigins.push(process.env.FRONTEND_URL);

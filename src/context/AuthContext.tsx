@@ -62,19 +62,28 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     } else {
       // Simulate Google OAuth popup behavior
       try {
-        // A short delay to mimic oauth handshake
-        await new Promise((resolve) => setTimeout(resolve, 1200));
+        const simulatedEmail = prompt(
+          "Enter your Google Email address for simulated OAuth Sign-in:", 
+          "admin.procyonsolutions@gmail.com"
+        );
+        if (simulatedEmail === null) {
+          setLoading(false);
+          return;
+        }
         
-        const mockAdmin: MockUser = {
-          uid: "mock-admin-uid-12345",
-          displayName: "Procyon Solutions Administrator",
-          email: "admin.procyonsolutions@gmail.com",
+        // A short delay to mimic oauth handshake
+        await new Promise((resolve) => setTimeout(resolve, 800));
+        
+        const mockUser: MockUser = {
+          uid: "mock-uid-" + Math.random().toString(36).substring(2, 9),
+          displayName: simulatedEmail.split("@")[0] || "Simulated User",
+          email: simulatedEmail.trim(),
           photoURL: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
         };
         
-        localStorage.setItem("Procyon Solutions_admin_user", JSON.stringify(mockAdmin));
-        setUser(mockAdmin);
-        toast.success("Successfully logged in via Simulated Google OAuth!");
+        localStorage.setItem("Procyon Solutions_admin_user", JSON.stringify(mockUser));
+        setUser(mockUser);
+        toast.success(`Successfully logged in via Simulated Google OAuth as ${mockUser.email}!`);
       } catch (error) {
         toast.error("Failed mock Google OAuth authentication");
       } finally {
