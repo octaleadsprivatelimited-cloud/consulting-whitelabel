@@ -748,11 +748,7 @@ export default function AdminPanel() {
     );
   }
 
-  const isAdmin = user && (
-    user.email === 'admin.procyonsolutions@gmail.com' ||
-    user.email === 'findlocalsg@gmail.com' ||
-    user.email?.endsWith('@procyonsol.com')
-  );
+  const isAdmin = user && user.email === 'admin.procyonsolutions@gmail.com';
 
   if (!user) {
     return (
