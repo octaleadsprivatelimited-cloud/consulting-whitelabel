@@ -456,7 +456,11 @@ export default function AdminPanel() {
   };
   const addHomeFeature = () => {
     if (!newHomeFeature.title) return toast.error("Title is required");
-    const list = [...(webContent.homeFeatures || []), newHomeFeature];
+    const list = [...(webContent.homeFeatures || []), {
+      ...newHomeFeature,
+      id: `feat-${Date.now()}`,
+      underlineColor: "bg-[#0076d6]"
+    }];
     handleSaveContentChange({ ...webContent, homeFeatures: list });
     setNewHomeFeature({ title: "", description: "", link: "", linkText: "", iconName: "Cloud" });
   };
@@ -476,7 +480,10 @@ export default function AdminPanel() {
   };
   const addHomeReason = () => {
     if (!newHomeReason.title) return toast.error("Title is required");
-    const list = [...(webContent.homeReasons || []), newHomeReason];
+    const list = [...(webContent.homeReasons || []), {
+      ...newHomeReason,
+      id: `reason-${Date.now()}`
+    }];
     handleSaveContentChange({ ...webContent, homeReasons: list });
     setNewHomeReason({ title: "", description: "", iconName: "CheckCircle" });
   };
@@ -499,7 +506,8 @@ export default function AdminPanel() {
       link: newProduct.link,
       iconName: newProduct.iconName,
       image: newProduct.image,
-      features: tags
+      features: tags,
+      color: "bg-accent"
     }];
     handleSaveContentChange({ ...webContent, products: list });
     setNewProduct({ title: "", subtitle: "", description: "", link: "", iconName: "Cloud", image: "", features: "" });
@@ -651,7 +659,11 @@ export default function AdminPanel() {
   };
   const addContactMethod = () => {
     if (!newContactMethod.title) return toast.error("Title is required");
-    const list = [...(webContent.contactMethods || []), newContactMethod];
+    const list = [...(webContent.contactMethods || []), {
+      ...newContactMethod,
+      id: `contact-${Date.now()}`,
+      color: "bg-sky-50 text-sky-600"
+    }];
     handleSaveContentChange({ ...webContent, contactMethods: list });
     setNewContactMethod({ title: "", contact: "", description: "", action: "", link: "", iconName: "Mail" });
   };
@@ -1336,7 +1348,7 @@ export default function AdminPanel() {
                     </div>
                     <div className="space-y-1">
                       <label className="text-xs font-semibold text-slate-700">Hero Description Sub-text</label>
-                      <Textarea value={webContent.pageTexts?.home?.heroSubtitle || ""} onChange={(e) => handleUpdatePageTexts("home", { heroSubtitle: e.target.value })} className="bg-slate-50 border-slate-200 text-xs rounded-lg" rows={3} />
+                      <Textarea value={webContent.pageTexts?.home?.heroDescription || ""} onChange={(e) => handleUpdatePageTexts("home", { heroDescription: e.target.value })} className="bg-slate-50 border-slate-200 text-xs rounded-lg" rows={3} />
                     </div>
                   </div>
 
@@ -1574,7 +1586,7 @@ export default function AdminPanel() {
                   <div className="grid grid-cols-1 gap-4">
                     <div className="space-y-1">
                       <label className="text-xs font-semibold text-slate-700">Services Page Hero Title</label>
-                      <Input value={webContent.pageTexts?.servicesPage?.heroTitle || ""} onChange={(e) => handleUpdatePageTexts("servicesPage", { heroTitle: e.target.value })} className="bg-slate-50 border-slate-200 text-xs h-9" />
+                      <Input value={webContent.pageTexts?.services?.heroTitle || ""} onChange={(e) => handleUpdatePageTexts("services", { heroTitle: e.target.value })} className="bg-slate-50 border-slate-200 text-xs h-9" />
                     </div>
                   </div>
 
@@ -1652,7 +1664,7 @@ export default function AdminPanel() {
                   <div className="grid grid-cols-1 gap-4">
                     <div className="space-y-1">
                       <label className="text-xs font-semibold text-slate-700">Hero Main Title</label>
-                      <Input value={webContent.pageTexts?.industriesPage?.heroTitle || ""} onChange={(e) => handleUpdatePageTexts("industriesPage", { heroTitle: e.target.value })} className="bg-slate-50 border-slate-200 text-xs h-9" />
+                      <Input value={webContent.pageTexts?.industries?.heroTitle || ""} onChange={(e) => handleUpdatePageTexts("industries", { heroTitle: e.target.value })} className="bg-slate-50 border-slate-200 text-xs h-9" />
                     </div>
                   </div>
 
@@ -1904,9 +1916,15 @@ export default function AdminPanel() {
                     <h3 className="text-sm font-bold text-slate-900">Company Who We Are Details</h3>
                     <p className="text-xs text-slate-500">Edit company story text block and list of executive profiles</p>
                   </div>
-                  <div className="space-y-1">
-                    <label className="text-xs font-semibold text-slate-700">Corporate Story Paragraph</label>
-                    <Textarea value={webContent.pageTexts?.about?.aboutStoryText || ""} onChange={(e) => handleUpdatePageTexts("about", { aboutStoryText: e.target.value })} className="bg-slate-50 border-slate-200 text-xs rounded-lg" rows={6} />
+                  <div className="grid grid-cols-1 gap-4">
+                    <div className="space-y-1">
+                      <label className="text-xs font-semibold text-slate-700">Hero Main Title</label>
+                      <Input value={webContent.pageTexts?.whoWeAre?.heroTitle || ""} onChange={(e) => handleUpdatePageTexts("whoWeAre", { heroTitle: e.target.value })} className="bg-slate-50 border-slate-200 text-xs h-9 rounded-lg" />
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-xs font-semibold text-slate-700">Corporate Story Paragraph</label>
+                      <Textarea value={webContent.pageTexts?.whoWeAre?.heroDescription || ""} onChange={(e) => handleUpdatePageTexts("whoWeAre", { heroDescription: e.target.value })} className="bg-slate-50 border-slate-200 text-xs rounded-lg" rows={6} />
+                    </div>
                   </div>
 
                   {editingLeadership && (
@@ -1993,6 +2011,8 @@ export default function AdminPanel() {
                         <Button size="sm" onClick={() => {
                           const list = [...(webContent.contactMethods || [])];
                           list[editingContactMethod._index] = {
+                            id: editingContactMethod.id || `contact-${Date.now()}`,
+                            color: editingContactMethod.color || "bg-sky-50 text-sky-600",
                             title: editingContactMethod.title,
                             contact: editingContactMethod.contact,
                             description: editingContactMethod.description,
